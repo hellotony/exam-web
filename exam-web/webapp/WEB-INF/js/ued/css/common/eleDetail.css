@@ -1,0 +1,30 @@
+.titleStyle{
+    height: 30px;line-height:30px;color: #428bca;margin-left:10px;font-size: 12px;font-weight: bold;
+}
+#signalInfoBar { margin-top: 5px; margin-left: 7px; font-weight: bold; font-size: 16px; color: red; }
+#showHelps { float: left; color: blue; font-size: 13px; }
+#signalInfoBar #loadingState { float: left; }
+#signalInfoBar #loadingState img { width: 18px; height: 18px; margin-top: -4px; }
+#signalHelpsWrap {
+    display: none; position: absolute; z-index: 99999999;
+    background: #cde5ff; border: #2d4784 1px solid; border-top: 0;
+    font-size: 11px; width: 302px;
+}
+#signalHelpsModal #helpHead {
+    background: url(../../../../img/detail/help-head.png); height: 25px; width: 308px;
+    padding: 0; line-height: 25px; margin: 0;
+}
+#signalHelpsModal table { white-space: nowrap; text-align: center; width: 296px; margin: 2px; }
+#signalHelpsModal table tr { height: 21px; }
+#signalHelpsModal table th { text-align: center; width: 250px; }
+#signalHelpsModal table th, #signalHelpsWrap table td { padding: 0px 6px; overflow: visible; }
+.signal .status .close { cursor: default !important; opacity: 0.2 !important; }
+
+
+.rou{ border-right:1px solid #BEBEBE;}
+.signalWarp{width:531px; height:137px; float:left;}
+.signal{width:60px; float:left; margin-left: 18px;}
+.signal .status{width:100%; height:23px; margin-bottom: 0px;}
+.signal .status .on{width:23px; height:23px; float:left; margin-left:18px; background: url(../../../../img/top/lgreen.png);}
+.signal .status .close{width:23px; height:23px; float:left; margin-left:18px; background: url(../../../../img/top/lyellow.png);}
+.signal .desc{width:100%; height:18px; line-height:18px; text-align:center;font-size:12px;}

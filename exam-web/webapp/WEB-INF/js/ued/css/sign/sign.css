@@ -1,0 +1,20 @@
+
+
+.view_sign {
+	display: block;
+}
+
+.edit_sign {
+	display: none;
+}
+
+span.view_sign {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 98%;
+}
+
+.selected_bgno .readySignTime {
+	float: left;
+}

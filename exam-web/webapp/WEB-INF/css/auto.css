@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.order, .g_info { padding: 20px 30px; border-bottom:1px solid #666; }
+.tn-form-table tr td:first-child { text-align: left; width: auto; position: relative; }
+.tn-form-table tr td:last-child { padding-left: 0; }
+.tn-form-table tr td:nth-of-type(even) { font-size: 16px; }
+.order, .g_info2 { padding: 20px 0;overflow:hidden;margin:0 -20px;border-bottom: 1px dashed #666;}
+.order, .g_info3 { padding: 20px 30px; margin: 0 -50px; overflow: hidden; border-bottom:1px solid #666; }
+.zh-title { border-color: #666; padding-left:10px; }
+.zh-box > .zh-content { /* margin: 20px 15px 0 15px;  */ margin: 20px 0 0;}
+.zh-box { margin-top: 25px; padding-top: 15px; position: relative;}
+.sline { width: 1000px; background: #666; position: absolute; top: -10px; left: -50px; height: 1px; overflow: hidden; }
+.sline2 { width: 845px; background: #666; position: absolute; top: -10px; left: -50px; height: 1px; overflow: hidden; }
+.infoTab { font-size: 14px; text-align: center; border-collapse:collapse; margin-top: 10px; }
+.infoTab td { height: 50px; border: 1px solid #ccc; line-height: 16px; }
+.infoTab thead td { position: relative; font-weight: bold; color: #333; }
+
+.nBookingStatusRemark { left: 200px; font-size: 11pt; color: #666; }
+.nbstat { position: absolute; left: 37px; top: 75px; font-size: 11pt; color: #666; }
+
+.fb1 tr td:nth-of-type(odd) { text-align: right; }
+.fb1 tr td:nth-of-type(even) { padding-left: 10px; } 

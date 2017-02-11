@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+       	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd 
+  	 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd 
+    	http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
+	<beans:bean id="jsonMessageConverter" class="com.exam.support.util.json.core.message.Base64JsonHttpMessageConverter"></beans:bean>
+	<annotation-driven>
+	  <message-converters>
+		<beans:bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"></beans:bean>
+		<beans:bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter"></beans:bean>
+		<beans:bean class="org.springframework.http.converter.StringHttpMessageConverter"></beans:bean>
+		<beans:bean class="org.springframework.http.converter.ResourceHttpMessageConverter"></beans:bean>
+		<beans:bean class="org.springframework.http.converter.xml.SourceHttpMessageConverter"></beans:bean>
+		<beans:bean class="org.springframework.http.converter.xml.XmlAwareFormHttpMessageConverter"></beans:bean>
+	  </message-converters>
+	  <argument-resolvers>
+		<beans:bean class="com.exam.support.util.json.core.argument.JsonMapperArgumentResolver" />
+	  </argument-resolvers>
+	  <return-value-handlers>
+	    <beans:bean  class="com.exam.support.util.json.core.method.ResponseJsonMethodProcessor"><!-- 处理返回值Vo -->
+		  <beans:property name="messageConverter" ref="jsonMessageConverter"/>
+		  <beans:property name="beanWrappers">
+			<beans:list>
+				<beans:bean class="com.exam.support.util.json.core.method.impl.ResponseVoWrapper" />
+				<beans:bean class="com.exam.support.util.json.core.method.impl.DefaultBeanWrapper" />
+			</beans:list>
+		  </beans:property>
+	    </beans:bean>
+	  </return-value-handlers>
+	</annotation-driven>
+
+	<beans:bean class="com.exam.support.util.json.core.mapping.RequestMappingHandlerPostProcessor">
+		<beans:property name="removedArgumentResolvers">
+			<beans:list>
+				<beans:value>org.springframework.web.method.annotation.MapMethodProcessor</beans:value>
+			</beans:list>
+		</beans:property>
+		<beans:property name="removedReturnValueHandlers">
+			<beans:list>
+				<beans:value>org.springframework.web.servlet.mvc.method.annotation.ViewNameMethodReturnValueHandler</beans:value>
+				<beans:value>org.springframework.web.method.annotation.MapMethodProcessor</beans:value>
+			</beans:list>
+		</beans:property>
+	</beans:bean>
+	<!-- <beans:bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator" />
+	 -->
+	  <beans:bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"><!-- replace default annotationHandlerMapping -->
+		<beans:property name="interceptors">
+			<beans:list>
+				<beans:bean class="com.exam.support.base.FrameworkInterceptor" />
+			</beans:list>
+		 </beans:property>
+	  </beans:bean>
+	<!-- interceptor of log -->
+	<interceptors>
+		<beans:bean id="examInterceptor"
+					class="com.exam.support.base.FrameworkInterceptor"></beans:bean>
+	</interceptors>
+	<beans:bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+	<!-- <beans:bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>  -->
+</beans:beans>

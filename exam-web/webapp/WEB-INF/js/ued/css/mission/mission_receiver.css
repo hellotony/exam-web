@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**
+出游需求 开始
+**/
+.demands.border_style {
+	margin-top:0;
+}
+.product_search, .order_travel {
+	width:1112px;
+	padding:8px;
+	float:left;
+	border:1px solid #ececec;
+}
+.product_search_title, .order_travel_title {
+	position: absolute;
+	width: 70px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	margin: -18px 0 0 6px;
+	font-weight: bold;
+	color: #1e1e1e;
+	background: #fff;
+}
+.product_search_with, .order_travel_with {
+	width:1112px;
+	float:left;
+	padding-top:15px;
+	margin-bottom:10px;
+}
+.product_search_with ul {
+	float:left;
+	width:1112px;
+	height:36px;
+	line-height:36px;
+}
+.product_search_with ul li {
+	float:left;
+	margin:0 4px;
+}
+.product_search_with ul li p {
+	float:left;
+	width:70px;
+	text-align:right;
+}
+.product_search_with_input {
+	float:left;
+}
+.product_search_with_input input {
+	width:47px;
+	height:22px;
+	margin:0 3px;
+	float:none;
+}
+.product_search_with_input input.travel_time {
+	width:222px;
+}
+.product_search_with_input input.price_input {
+	width:80px;
+}
+.product_search_concrete {
+	width:1112px;
+	height:36px;
+	padding-top:8px;
+	float:left;
+}
+.product_search_concrete input {
+	width:513px;
+	height:22px;
+	float:left;
+}
+.order_travel {
+	margin-top:20px;
+}
+.order_travel_title {
+	width:90px;
+}
+.order_travel_left {
+	width:630px;
+	float:left;
+}
+.order_travel_left span {
+	height:30px;
+	padding:5px 3px;
+	width:620px;
+	float:left;
+	line-height:24px;
+}
+.travel_add {
+	float:left;
+	width:110px;
+	margin-left:20px;
+}
+.travel_add .add_input {
+	width:auto;
+	height:auto;
+	margin: 8px 6px 0 13px;
+}
+.u_input {
+	width:67px;
+	height:24px;
+	float:left;
+	margin:4px 0;
+}
+.travel_add p {
+	float:left;
+	width:auto;
+}
+.travel_left_adult p.time, .time {
+	width:110px;
+	color:#333;
+	float:left;
+}
+.u_select {
+	width:182px;
+	float:left;
+	margin-top:3px;
+}
+.remark {
+	float:left;
+	font-size:12px;
+}
+.width_new {
+	float:left;
+	margin:10px
+}
+.order_travel_right {
+	width:470px;
+	height:244px;
+	float:right;
+	margin:0;
+	border:1px solid #ddd;
+}
+.order_travel_right_top {
+	position: absolute;
+	float:left;
+	width:470px;
+	height:30px;
+	background:#ececec;
+	line-height:30px;
+	z-index:111;
+}
+.order_travel_right_top ul {
+	float:left;
+	width:100%;
+}
+.order_travel_right_top ul li {
+	float:left;
+	border-right:1px solid #ddd;
+}
+.order_travel_right_top ul li a {
+	padding:0 10px;
+}
+.order_travel_right_top ul li a:hover {
+	background:#fff;
+	color:#333;
+}
+.order_travel_right_top ul li a.hover {
+	background:#fff;
+	color:#333;
+}
+.order_travel_right_deta {
+	float:left;
+	width:420px;
+	margin:10px;
+}
+.order_travel_right_deta p {
+	float:left;
+	width:420px;
+	line-height:18px;
+	font-size:12px;
+	color:#666;
+	padding:5px;
+}
+.city_area {
+	border: 1px solid rgb(140, 191, 222);
+	position: absolute;
+	z-index: 100005;
+	background-color: rgb(255, 255, 255);
+	padding: 5px;
+	width: 230px;
+	max-height: 580px;
+	overflow: auto;
+	left: 665px;
+	top: 387px;
+	display: none;
+}
+.city_area li {
+	float: left;
+	margin: 2px;
+	padding-bottom: 3px;
+	padding-left: 4px;
+	cursor: pointer;
+	border: 1px solid rgb(255, 255, 255);
+}
+.city_area_schedule {
+	border: 1px solid rgb(140, 191, 222);
+	position: absolute;
+	z-index: 100005;
+	background-color: rgb(255, 255, 255);
+	padding: 5px;
+	width: 380px;
+	max-height: 580px;
+	overflow: auto;
+	left:465px;
+	top: 387px;
+	display: none;
+"
+}
+.city_area_schedule dl {
+	float: left;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	border: 1px solid rgb(255, 255, 255);
+}
+.city_area_schedule li {
+	float: left;
+	margin: 2px;
+	padding-bottom: 3px;
+	padding-left: 2px;
+	cursor: pointer;
+	border: 1px solid rgb(255, 255, 255);
+}
+.set_out_hover .city_area {
+	display:block;
+}
+/**
+出游需求 结束
+**/
+.inform_recipient input{
+	width:180px;
+}
+/**出团通知接受者 开始**/
+.travel_demand_ul.inform_recipient li span b {
+	float: left;
+	width: 62px;
+	text-align: right;
+	font-weight:100;
+	line-height:30px;
+}
+.travel_demand_ul.inform_recipient li {
+	padding:5px 0;
+	height: auto;
+}
+.travel_demand_ul.inform_recipient li span.remarks {
+	width:480px;
+}
+.travel_demand_ul.inform_recipient li span.remarks textarea {
+	width: 220px;
+	min-height: 50px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	resize: none;
+}
+.inform_recipient li span a.fun_button {
+	padding-left:12px;
+}
+/**出团通知接受者 结束**/

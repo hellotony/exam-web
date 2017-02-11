@@ -1,0 +1,26 @@
+.cd-horizontal-timeline .events a::after{width:57px;height:55px;background-image:url(../../images/ico-time-d2.png);border:6px solid #fff;bottom:-21px;background-color:#fff;background-repeat:no-repeat;}
+.cd-horizontal-timeline .events a.older-event::after{background-image:url(../../images/ico-time-d1.png);border-color:#fff;}
+.cd-horizontal-timeline .events a::before{content:"";width:9px;height:11px;background-color:#c3c1c1;position:absolute;float:left;top:30px;left:50%;margin-left:-5px;display:block;}
+.cd-horizontal-timeline .events a.selected::after{background-image:url(../../images/ico-time-d3.png);background-color:#fff;border:6px solid #fff;}
+.cd-horizontal-timeline .events{height:7px;background-color:#c3c1c1;top:69px;}
+.cd-horizontal-timeline .timeline{height:180px;}
+.cd-horizontal-timeline .events-wrapper{height:240px;}
+.cd-horizontal-timeline .events li:nth-of-type(even) a,.cd-horizontal-timeline .events li:nth-of-type(odd) a{padding-bottom:50px; width: 160px;}
+.cd-horizontal-timeline .events a span{font-size:18px;}
+#txt_content{top:15px;}
+#txt_content .popup em{border-color:transparent transparent #fcfbeb;}
+#txt_content .popup{background:#fcfbeb;border:1px solid #ff6600; left: 10px;}
+#txt_content .popup span{border-color:transparent transparent #ff6600;}
+.cd-horizontal-timeline .events-wrapper::before{background-image:none;}
+.cd-horizontal-timeline .events-wrapper::after{background-image:none;}
+.cd-timeline-navigation a{width:30px;height:30px;background-image:url(../../images/ico-time-aggl.png);background-repeat:no-repeat;border:0;top:-15px;margin-top:3px;overflow:inherit;}
+.cd-timeline-navigation a.prev{background-image:url(../../images/ico-time-aggl.png);-webkit-transform:none;transform:none;left:15px;}
+.cd-timeline-navigation a.prev::after{background:none;background-image:url(../../images/time-aggsm1.png);width:17px;height:29px;-webkit-web-transform:none;margin-left:-20px;margin-top:-1px;-moz-web-transform:none;-ms-web-transform:none;-o-web-transform:none;}
+
+.cd-timeline-navigation a.next{background-image:url(../../images/ico-time-agg-h.png);right:15px;top:-5px;}
+ul.cd-timeline-navigation{width:100%;position:absolute;top:70px;}
+.cd-timeline-navigation a.next::after{background:none;background-image:url(../../images/time-aggsm1.png);width:17px;height:29px;-webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+transform: rotate(180deg); margin-left: 10px; margin-top:-14px; }

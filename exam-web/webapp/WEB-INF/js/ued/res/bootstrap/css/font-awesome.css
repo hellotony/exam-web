@@ -1,0 +1,1160 @@
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: http://lemonwi.se co-founder
+
+    */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../font/fontawesome-webfont.eot');
+  src: url('../font/fontawesome-webfont.eot') format('embedded-opentype'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'), url('../font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* sprites.less reset */
+[class^="icon-"], [class*=" icon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+}
+li[class^="icon-"], li[class*=" icon-"] {
+  display: block;
+}
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+a [class^="icon-"], a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* makes the font 33% larger relative to the icon container */
+.icon-large:before {
+  vertical-align: top;
+  font-size: 1.3333333333333333em;
+}
+.btn [class^="icon-"], .btn [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+
+  line-height: .9em;
+}
+li [class^="icon-"], li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+
+  width: 1.875em;
+}
+li[class^="icon-"], li[class*=" icon-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+li[class^="icon-"]:before, li[class*=" icon-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
+  text-indent: -1.3333333333333333em;
+}
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+.icon-glass:before                { content: "\f000"; }
+.icon-music:before                { content: "\f001"; }
+.icon-search:before               { content: "\f002"; }
+.icon-envelope:before             { content: "\f003"; }
+.icon-heart:before                { content: "\f004"; }
+.icon-star:before                 { content: "\f005"; }
+.icon-star-empty:before           { content: "\f006"; }
+.icon-user:before                 { content: "\f007"; }
+.icon-film:before                 { content: "\f008"; }
+.icon-th-large:before             { content: "\f009"; }
+.icon-th:before                   { content: "\f00a"; }
+.icon-th-list:before              { content: "\f00b"; }
+.icon-ok:before                   { content: "\f00c"; }
+.icon-remove:before               { content: "\f00d"; }
+.icon-zoom-in:before              { content: "\f00e"; }
+
+.icon-zoom-out:before             { content: "\f010"; }
+.icon-off:before                  { content: "\f011"; }
+.icon-signal:before               { content: "\f012"; }
+.icon-cog:before                  { content: "\f013"; }
+.icon-trash:before                { content: "\f014"; }
+.icon-home:before                 { content: "\f015"; }
+.icon-file:before                 { content: "\f016"; }
+.icon-time:before                 { content: "\f017"; }
+.icon-road:before                 { content: "\f018"; }
+.icon-download-alt:before         { content: "\f019"; }
+.icon-download:before             { content: "\f01a"; }
+.icon-upload:before               { content: "\f01b"; }
+.icon-inbox:before                { content: "\f01c"; }
+.icon-play-circle:before          { content: "\f01d"; }
+.icon-repeat:before               { content: "\f01e"; }
+
+/* \f020 is not a valid unicode character. all shifted one down */
+.icon-refresh:before              { content: "\f021"; }
+.icon-list-alt:before             { content: "\f022"; }
+.icon-lock:before                 { content: "\f023"; }
+.icon-flag:before                 { content: "\f024"; }
+.icon-headphones:before           { content: "\f025"; }
+.icon-volume-off:before           { content: "\f026"; }
+.icon-volume-down:before          { content: "\f027"; }
+.icon-volume-up:before            { content: "\f028"; }
+.icon-qrcode:before               { content: "\f029"; }
+.icon-barcode:before              { content: "\f02a"; }
+.icon-tag:before                  { content: "\f02b"; }
+.icon-tags:before                 { content: "\f02c"; }
+.icon-book:before                 { content: "\f02d"; }
+.icon-bookmark:before             { content: "\f02e"; }
+.icon-print:before                { content: "\f02f"; }
+
+.icon-camera:before               { content: "\f030"; }
+.icon-font:before                 { content: "\f031"; }
+.icon-bold:before                 { content: "\f032"; }
+.icon-italic:before               { content: "\f033"; }
+.icon-text-height:before          { content: "\f034"; }
+.icon-text-width:before           { content: "\f035"; }
+.icon-align-left:before           { content: "\f036"; }
+.icon-align-center:before         { content: "\f037"; }
+.icon-align-right:before          { content: "\f038"; }
+.icon-align-justify:before        { content: "\f039"; }
+.icon-list:before                 { content: "\f03a"; }
+.icon-indent-left:before          { content: "\f03b"; }
+.icon-indent-right:before         { content: "\f03c"; }
+.icon-facetime-video:before       { content: "\f03d"; }
+.icon-picture:before              { content: "\f03e"; }
+
+.icon-pencil:before               { content: "\f040"; }
+.icon-map-marker:before           { content: "\f041"; }
+.icon-adjust:before               { content: "\f042"; }
+.icon-tint:before                 { content: "\f043"; }
+.icon-edit:before                 { content: "\f044"; }
+.icon-share:before                { content: "\f045"; }
+.icon-check:before                { content: "\f046"; }
+.icon-move:before                 { content: "\f047"; }
+.icon-step-backward:before        { content: "\f048"; }
+.icon-fast-backward:before        { content: "\f049"; }
+.icon-backward:before             { content: "\f04a"; }
+.icon-play:before                 { content: "\f04b"; }
+.icon-pause:before                { content: "\f04c"; }
+.icon-stop:before                 { content: "\f04d"; }
+.icon-forward:before              { content: "\f04e"; }
+
+.icon-fast-forward:before         { content: "\f050"; }
+.icon-step-forward:before         { content: "\f051"; }
+.icon-eject:before                { content: "\f052"; }
+.icon-chevron-left:before         { content: "\f053"; }
+.icon-chevron-right:before        { content: "\f054"; }
+.icon-plus-sign:before            { content: "\f055"; }
+.icon-minus-sign:before           { content: "\f056"; }
+.icon-remove-sign:before          { content: "\f057"; }
+.icon-ok-sign:before              { content: "\f058"; }
+.icon-question-sign:before        { content: "\f059"; }
+.icon-info-sign:before            { content: "\f05a"; }
+.icon-screenshot:before           { content: "\f05b"; }
+.icon-remove-circle:before        { content: "\f05c"; }
+.icon-ok-circle:before            { content: "\f05d"; }
+.icon-ban-circle:before           { content: "\f05e"; }
+
+.icon-arrow-left:before           { content: "\f060"; }
+.icon-arrow-right:before          { content: "\f061"; }
+.icon-arrow-up:before             { content: "\f062"; }
+.icon-arrow-down:before           { content: "\f063"; }
+.icon-share-alt:before            { content: "\f064"; }
+.icon-resize-full:before          { content: "\f065"; }
+.icon-resize-small:before         { content: "\f066"; }
+.icon-plus:before                 { content: "\f067"; }
+.icon-minus:before                { content: "\f068"; }
+.icon-asterisk:before             { content: "\f069"; }
+.icon-exclamation-sign:before     { content: "\f06a"; }
+.icon-gift:before                 { content: "\f06b"; }
+.icon-leaf:before                 { content: "\f06c"; }
+.icon-fire:before                 { content: "\f06d"; }
+.icon-eye-open:before             { content: "\f06e"; }
+
+.icon-eye-close:before            { content: "\f070"; }
+.icon-warning-sign:before         { content: "\f071"; }
+.icon-plane:before                { content: "\f072"; }
+.icon-calendar:before             { content: "\f073"; }
+.icon-random:before               { content: "\f074"; }
+.icon-comment:before              { content: "\f075"; }
+.icon-magnet:before               { content: "\f076"; }
+.icon-chevron-up:before           { content: "\f077"; }
+.icon-chevron-down:before         { content: "\f078"; }
+.icon-retweet:before              { content: "\f079"; }
+.icon-shopping-cart:before        { content: "\f07a"; }
+.icon-folder-close:before         { content: "\f07b"; }
+.icon-folder-open:before          { content: "\f07c"; }
+.icon-resize-vertical:before      { content: "\f07d"; }
+.icon-resize-horizontal:before    { content: "\f07e"; }
+
+.icon-bar-chart:before            { content: "\f080"; }
+.icon-twitter-sign:before         { content: "\f081"; }
+.icon-facebook-sign:before        { content: "\f082"; }
+.icon-camera-retro:before         { content: "\f083"; }
+.icon-key:before                  { content: "\f084"; }
+.icon-cogs:before                 { content: "\f085"; }
+.icon-comments:before             { content: "\f086"; }
+.icon-thumbs-up:before            { content: "\f087"; }
+.icon-thumbs-down:before          { content: "\f088"; }
+.icon-star-half:before            { content: "\f089"; }
+.icon-heart-empty:before          { content: "\f08a"; }
+.icon-signout:before              { content: "\f08b"; }
+.icon-linkedin-sign:before        { content: "\f08c"; }
+.icon-pushpin:before              { content: "\f08d"; }
+.icon-external-link:before        { content: "\f08e"; }
+
+.icon-signin:before               { content: "\f090"; }
+.icon-trophy:before               { content: "\f091"; }
+.icon-github-sign:before          { content: "\f092"; }
+.icon-upload-alt:before           { content: "\f093"; }
+.icon-lemon:before                { content: "\f094"; }
+.icon-phone:before                { content: "\f095"; }
+.icon-check-empty:before          { content: "\f096"; }
+.icon-bookmark-empty:before       { content: "\f097"; }
+.icon-phone-sign:before           { content: "\f098"; }
+.icon-twitter:before              { content: "\f099"; }
+.icon-facebook:before             { content: "\f09a"; }
+.icon-github:before               { content: "\f09b"; }
+.icon-unlock:before               { content: "\f09c"; }
+.icon-credit-card:before          { content: "\f09d"; }
+.icon-rss:before                  { content: "\f09e"; }
+
+.icon-hdd:before                  { content: "\f0a0"; }
+.icon-bullhorn:before             { content: "\f0a1"; }
+.icon-bell:before                 { content: "\f0a2"; }
+.icon-certificate:before          { content: "\f0a3"; }
+.icon-hand-right:before           { content: "\f0a4"; }
+.icon-hand-left:before            { content: "\f0a5"; }
+.icon-hand-up:before              { content: "\f0a6"; }
+.icon-hand-down:before            { content: "\f0a7"; }
+.icon-circle-arrow-left:before    { content: "\f0a8"; }
+.icon-circle-arrow-right:before   { content: "\f0a9"; }
+.icon-circle-arrow-up:before      { content: "\f0aa"; }
+.icon-circle-arrow-down:before    { content: "\f0ab"; }
+.icon-globe:before                { content: "\f0ac"; }
+.icon-wrench:before               { content: "\f0ad"; }
+.icon-tasks:before                { content: "\f0ae"; }
+
+.icon-filter:before               { content: "\f0b0"; }
+.icon-briefcase:before            { content: "\f0b1"; }
+.icon-fullscreen:before           { content: "\f0b2"; }
+
+.icon-group:before                { content: "\f0c0"; }
+.icon-link:before                 { content: "\f0c1"; }
+.icon-cloud:before                { content: "\f0c2"; }
+.icon-beaker:before               { content: "\f0c3"; }
+.icon-cut:before                  { content: "\f0c4"; }
+.icon-copy:before                 { content: "\f0c5"; }
+.icon-paper-clip:before           { content: "\f0c6"; }
+.icon-save:before                 { content: "\f0c7"; }
+.icon-sign-blank:before           { content: "\f0c8"; }
+.icon-reorder:before              { content: "\f0c9"; }
+.icon-list-ul:before              { content: "\f0ca"; }
+.icon-list-ol:before              { content: "\f0cb"; }
+.icon-strikethrough:before        { content: "\f0cc"; }
+.icon-underline:before            { content: "\f0cd"; }
+.icon-table:before                { content: "\f0ce"; }
+
+.icon-magic:before                { content: "\f0d0"; }
+.icon-truck:before                { content: "\f0d1"; }
+.icon-pinterest:before            { content: "\f0d2"; }
+.icon-pinterest-sign:before       { content: "\f0d3"; }
+.icon-google-plus-sign:before     { content: "\f0d4"; }
+.icon-google-plus:before          { content: "\f0d5"; }
+.icon-money:before                { content: "\f0d6"; }
+.icon-caret-down:before           { content: "\f0d7"; }
+.icon-caret-up:before             { content: "\f0d8"; }
+.icon-caret-left:before           { content: "\f0d9"; }
+.icon-caret-right:before          { content: "\f0da"; }
+.icon-columns:before              { content: "\f0db"; }
+.icon-sort:before                 { content: "\f0dc"; }
+.icon-sort-down:before            { content: "\f0dd"; }
+.icon-sort-up:before              { content: "\f0de"; }
+
+.icon-envelope-alt:before         { content: "\f0e0"; }
+.icon-linkedin:before             { content: "\f0e1"; }
+.icon-undo:before                 { content: "\f0e2"; }
+.icon-legal:before                { content: "\f0e3"; }
+.icon-dashboard:before            { content: "\f0e4"; }
+.icon-comment-alt:before          { content: "\f0e5"; }
+.icon-comments-alt:before         { content: "\f0e6"; }
+.icon-bolt:before                 { content: "\f0e7"; }
+.icon-sitemap:before              { content: "\f0e8"; }
+.icon-umbrella:before             { content: "\f0e9"; }
+.icon-paste:before                { content: "\f0ea"; }
+
+.icon-user-md:before              { content: "\f200"; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*flexigrid*/
+
+@charset "UTF-8";
+/* CSS Document */
+.flexigrid {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  position: relative;
+  border: 0px solid #eee;
+  /*overflow: hidden; kxp delete*/
+  overflow: visible;/*kxp add*/
+  color: #333;
+}
+
+.flexigrid.hideBody {
+  height: 26px !important;
+  border-bottom: 1px solid #ccc;
+}
+
+.ie6fullwidthbug {
+  border-right: 0px solid #ccc;
+  padding-right: 2px;
+}
+
+.flexigrid div.nDiv {
+  background: #eee url(images/line.gif) repeat-y -1px top;
+  border: 1px solid #ccc;
+  border-top: 0px;
+  overflow: auto;
+  left: 0px;
+  position: absolute;
+  z-index: 999;
+  float: left;
+}
+
+.flexigrid div.nDiv table {
+  margin: 2px;
+}
+
+.flexigrid div.hDivBox {
+  float: left;
+  padding-right: 40px;
+  font-weight:bold;
+  color:#333333;
+}
+
+.flexigrid div.bDiv table {
+  margin-bottom: 10px;
+}
+
+.flexigrid div.bDiv table.autoht {
+  border-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.flexigrid div.nDiv td {
+  padding: 2px 3px;
+  border: 1px solid #eee;
+  cursor: default;
+}
+
+.flexigrid div.nDiv tr:hover td,.flexigrid div.nDiv tr.ndcolover td {
+  background: #d5effc url(images/hl.png) repeat-x top;
+  border: 1px solid #a8d8eb;
+}
+
+.flexigrid div.nDiv td.ndcol1 {
+  border-right: 1px solid #ccc;
+}
+
+.flexigrid div.nDiv td.ndcol2 {
+  border-left: 1px solid #fff;
+  padding-right: 10px;
+}
+
+.flexigrid div.nDiv tr:hover td.ndcol1,.flexigrid div.nDiv tr.ndcolover td.ndcol1
+  {
+  border-right: 1px solid #d2e3ec;
+}
+
+.flexigrid div.nDiv tr:hover td.ndcol2,.flexigrid div.nDiv tr.ndcolover td.ndcol2
+  {
+  border-left: 1px solid #eef8ff;
+}
+
+.flexigrid div.nBtn {
+  position: absolute;
+  height: 32px;
+  width: 14px;
+  z-index: 900;
+  /*background: #fafafa url(images/fhbg.gif) repeat-x bottom;*/
+  border: 0px solid #ccc;
+  border-left: 1px solid #ccc;
+  top: 0px;
+  left: 0px;
+  margin-top: 1px;
+  cursor: pointer;
+  display: none;
+  line-height:32px;
+}
+
+.flexigrid div.nBtn div {
+  height: 32px;
+  width: 12px;
+  border-left: 1px solid #fff;
+  float: left;
+  /*background: url(images/ddn.png) no-repeat center;*/
+}
+
+.flexigrid div.nBtn.srtd {
+  background: url(images/wbg.gif) repeat-x 0px -1px;
+}
+
+.flexigrid div.mDiv {
+  /*
+  background: url(images/wbg.gif) repeat-x top;
+  border: 1px solid #ccc;
+  border-top: 0px;
+  background-color: #C6E3F1;
+  */
+  border: 1px solid #DDD;
+  /*background: url("images/tab-content-bg.gif") repeat-x scroll 0 0 transparent;*/
+  background:#ededed;
+  border-bottom: 0px;
+  font-weight: bold;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.flexigrid div.mDiv div {
+  color: #333;
+  padding: 3px 6px;
+  white-space: nowrap;
+}
+
+.flexigrid div.mDiv div.ptogtitle {
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  padding: 0px;
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  border: 1px solid #CCC;
+  cursor: pointer;
+}
+
+.flexigrid div.mDiv div.ptogtitle:hover {
+  background-position: left -2px;
+  border-color: #bbb;
+}
+
+.flexigrid div.mDiv div.ptogtitle span {
+  display: block;
+  border-left: 1px solid #eee;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #ddd;
+  width: 14px;
+  height: 14px;
+  background: url(images/uup.png) no-repeat center;
+}
+
+.flexigrid div.mDiv div.ptogtitle.vsble span {
+  background: url(images/ddn.png) no-repeat center;
+}
+
+.flexigrid div.tDiv /*toolbar*/ {
+  /*background: #fafafa url(images/bg.gif) repeat-x top;
+  border: 1px solid #ccc;
+  background-color: #F9F9F9;
+  border: 1px solid #8CBFDE;overflow: hidden;*/
+  position: relative;
+  border-bottom: 0px;
+  
+}
+
+.flexigrid div.tDiv2 {
+  float: left;
+  clear: both;
+  padding: 1px 1px 1px 0px;
+}
+
+.flexigrid div.sDiv /*toolbar*/ {
+  background: #fafafa url(images/bg.gif) repeat-x top;
+  position: relative;
+  border: 1px solid #ccc;
+  border-top: 0px;
+  overflow: hidden;
+  display: none;
+}
+
+.flexigrid div.sDiv2 {
+  float: left;
+  clear: both;
+  padding: 5px;
+  padding-left: 5px;
+  width: 1024px;
+}
+
+.flexigrid div.sDiv2 input,.flexigrid div.sDiv2 select {
+  vertical-align: middle;
+}
+
+.flexigrid div.btnseparator {
+  float: left;
+  height: 14px;
+  line-height:22px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #fff;
+  margin: 1px;
+  margin-top:6px;
+}
+
+.flexigrid div.fbutton {
+  float: left;
+  display: block;
+  cursor: pointer;
+  padding: 1px 5px 1px 0px;
+  margin-bottom:5px;
+}
+
+.flexigrid div.nohover {
+  cursor: auto;
+}
+
+.flexigrid div.fbutton div {
+  float: left;
+  padding: 0px;
+}
+
+.flexigrid div.fbutton span {
+  float: left;
+  display: block;
+  /*padding: 3px;
+  padding: 0px;*/
+}
+.flexigrid div.fbutton .btn-group > .dropdown-toggle { height:18px; }
+.flexigrid div.fbutton:hover,.flexigrid div.fbutton.fbOver {/*
+  padding: 0px;
+  border: 1px solid Transparent;*/
+}
+
+.flexigrid div.nohover:hover,.flexigrid div.nohover.fbOver {/*
+  padding: 0px;
+  border: 1px solid Transparent;*/
+}
+
+.flexigrid div.fbutton:hover div,.flexigrid div.fbutton.fbOver div {/*
+  padding: 0px 2px;
+  border-left: 1px solid Transparent;
+  border-top: 1px solid Transparent;
+  border-right: 1px solid Transparent;
+  border-bottom: 1px solid Transparent;*/
+}
+
+.flexigrid div.nohover:hover div,.flexigrid div.nohover.fbOver div {/*
+  padding: 0px 2px;
+  border-left: 1px solid Transparent;
+  border-top: 1px solid Transparent;
+  border-right: 1px solid Transparent;
+  border-bottom: 1px solid Transparent;*/
+}
+
+/* end toolbar*/
+.flexigrid div.hDiv {
+  background: #fafafa;
+  position: relative;
+  border: 1px solid #DDD;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.flexigrid div.hDiv table {
+  border-right: 1px solid #fff;
+}
+
+.flexigrid div.cDrag {
+  float: left;
+  position: absolute;
+  z-index: 2;
+  overflow: visible;
+}
+
+.flexigrid div.cDrag div {
+  float: left;
+  background: none;
+  display: block;
+  position: absolute;
+  height: 24px;
+  width: 5px;
+  cursor: auto;
+}
+
+.flexigrid div.cDrag div:hover,.flexigrid div.cDrag div.dragging {
+  /*background: url(images/line.gif) repeat-y 2px center;*/
+}
+
+.flexigrid div.iDiv {
+  border: 1px solid #316ac5;
+  position: absolute;
+  overflow: visible;
+  background: none;
+}
+
+.flexigrid div.iDiv input,.flexigrid div.iDiv select,.flexigrid div.iDiv textarea
+  {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+.flexigrid div.iDiv input.tb {
+  border: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  background: none;
+}
+
+.flexigrid div.bDiv {
+  border: 1px solid #DDD;
+  border-top: 0px;
+  background: #fff;
+  overflow: auto;
+  position: relative;
+}
+
+.flexigrid div.bDiv table {
+  border-bottom: 1px solid #ccc;
+}
+
+.flexigrid div.hGrip {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 5px;
+  width: 5px;
+  background: url(images/line.gif) repeat-x center;
+  margin-right: 1px;
+  cursor: col-resize;
+}
+
+.flexigrid div.hGrip:hover,.flexigrid div.hGrip.hgOver {
+  border-right: 1px solid #999;
+  margin-right: 0px;
+}
+
+.flexigrid div.vGrip {
+  height: 5px;
+  overflow: hidden;
+  position: relative;
+  background: #fafafa url(images/wbg.gif) repeat-x 0px -1px;
+  border: 1px solid #ccc;
+  border-top: 0px;
+  text-align: center;
+  cursor: row-resize;
+}
+
+.flexigrid div.vGrip span {
+  display: block;
+  margin: 1px auto;
+  width: 20px;
+  height: 1px;
+  overflow: hidden;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  background: none;
+}
+
+.flexigrid div.hDiv th,.flexigrid  div.bDiv td
+  /* common cell properties*/ {
+  text-align: left;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #fff;
+  overflow: hidden;
+  /*vertical-align: top !important;*/
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.flexigrid div.hDiv th div,.flexigrid  div.bDiv td  div,div.colCopy div
+  /* common inner cell properties*/ {
+  padding: 6px;
+  border-left: 0px solid #fff;
+}
+
+.flexigrid div.hDiv th,div.colCopy {
+  color:#333333;
+  font-weight: bold;
+  height: 24px;
+  cursor: default;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+div.colCopy {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  background: #fafafa url(images/fhbg.gif) repeat-x bottom;
+  border: 1px solid #ccc;
+  border-bottom: 0px;
+  overflow: hidden;
+}
+
+.flexigrid div.hDiv th.sorted {
+  background: url(images/wbg.gif) repeat-x 0px -1px;
+  border-bottom: 0px solid #ccc;
+}
+
+.flexigrid div.hDiv th.thOver {
+  
+}
+
+.flexigrid div.hDiv th.thOver div,.flexigrid div.hDiv th.sorted.thOver div
+  {
+  /*border-bottom: 1px solid orange;
+  padding-bottom: 2px;*/
+}
+
+.flexigrid div.hDiv th.sorted div {
+  border-bottom: 0px solid #ccc;
+  padding-bottom: 2px;
+}
+
+.flexigrid div.hDiv th.thMove {
+  background: #fff;
+  color: #fff;
+}
+
+.flexigrid div.hDiv th.sorted.thMove div {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 4px
+}
+
+.flexigrid div.hDiv th.thMove div {
+  background: #fff !important;
+}
+
+.flexigrid div.hDiv th div.sdesc {
+  background: url(images/dn.png) no-repeat center top;
+}
+
+.flexigrid div.hDiv th div.sasc {
+  background: url(images/up.png) no-repeat center top;
+}
+
+.flexigrid div.bDiv td {
+  vertical-align: top;
+  white-space: nowrap;
+}
+.flexigrid div.bDiv td {
+  line-height: 23px;
+}
+
+.flexigrid div.hDiv th div {
+  line-height: 20px;
+}
+
+.flexigrid span.cdropleft {
+  display: block;
+  background: url(images/prev.gif) no-repeat -4px center;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: -24px;
+  margin-bottom: -24px;
+  z-index: 3;
+}
+
+.flexigrid div.hDiv span.cdropright {
+  display: block;
+  background: url(images/next.gif) no-repeat 12px center;
+  width: 24px;
+  height: 24px;
+  float: right;
+  position: relative;
+  top: -24px;
+  margin-bottom: -24px;
+}
+
+.flexigrid div.bDiv td div {
+  border-top: 0px solid #fff;
+  padding-bottom: 2px;
+}
+
+.flexigrid tr td.sorted {
+  background: #f3f3f3;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.flexigrid tr td.sorted div {
+  
+}
+
+.flexigrid tr.erow td {
+  background: #f9f9f9;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.flexigrid tr.erow td.sorted {
+  background: #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.flexigrid tr.erow td.sorted div {
+  
+}
+
+.flexigrid div.bDiv tr:hover td,.flexigrid div.bDiv tr:hover td.sorted,.flexigrid div.bDiv tr.trOver td.sorted,.flexigrid div.bDiv tr.trOver td
+  {
+  background: #f9f9f9;
+}
+
+.flexigrid div.bDiv td.selected,.flexigrid tr.erow td.selected
+  {
+  background: #ffffdd;
+}
+
+.flexigrid div.bDiv tr.trSelected:hover td,.flexigrid div.bDiv tr.trSelected:hover td.sorted,.flexigrid div.bDiv tr.trOver.trSelected td.sorted,.flexigrid div.bDiv tr.trOver.trSelected td,.flexigrid tr.trSelected td.sorted,.flexigrid tr.trSelected td
+  {
+  background: #d5effc url(images/hl.png) repeat-x top;
+  border-right: 1px solid #d2e3ec;
+  border-left: 1px solid #eef8ff;
+  border-bottom: 1px solid #a8d8eb;
+}
+
+/* novstripe adjustments */
+.flexigrid.novstripe .bDiv table {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.flexigrid.novstripe  div.bDiv td {
+  border-right-color: #fff;
+}
+
+.flexigrid.novstripe div.bDiv tr.erow td.sorted {
+  border-right-color: #e3e3e3;
+}
+
+.flexigrid.novstripe div.bDiv tr td.sorted {
+  border-right-color: #f3f3f3;
+}
+
+.flexigrid.novstripe  div.bDiv tr.erow td {
+  border-right-color: #f7f7f7;
+  border-left-color: #f7f7f7;
+}
+
+.flexigrid.novstripe div.bDiv tr.trSelected:hover td,.flexigrid.novstripe div.bDiv tr.trSelected:hover td.sorted,.flexigrid.novstripe div.bDiv tr.trOver.trSelected td.sorted,.flexigrid.novstripe div.bDiv tr.trOver.trSelected td,.flexigrid.novstripe tr.trSelected td.sorted,.flexigrid.novstripe tr.trSelected td
+  {
+  border-right: 1px solid #0066FF;
+  border-left: 1px solid #0066FF;
+}
+
+.flexigrid.novstripe div.bDiv tr.trOver td,.flexigrid.novstripe div.bDiv tr:hover td
+  {
+  border-left-color: #d9ebf5;
+  border-right-color: #d9ebf5;
+}
+
+/* end novstripe */
+.flexigrid div.pDiv {
+  background: #fafafa;
+  border: 1px solid #DDD;
+  border-radius: 0 0 3px 3px;
+  border-top: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.flexigrid div.pDiv div.pDiv2 {
+  margin: 3px;
+  margin-left: -2px;
+  float: left;
+  width: 1024px;
+}
+
+div.pGroup {
+  float: left;
+  background: none;
+  height: 24px;
+  line-height: 14px;
+  margin: 0px 5px;
+  color:#999;
+}
+
+.flexigrid div.pDiv .pPageStat,.flexigrid div.pDiv .pcontrol {
+  position: relative;
+  top: 5px;
+  overflow: visible;
+}
+
+.flexigrid div.pDiv input {
+  vertical-align: text-top;
+  position: relative;
+  top: -5px;
+}
+
+.flexigrid div.pDiv  div.pButton {
+  float: left;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #fafafa;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.flexigrid div.pDiv  div.pButton:hover,.flexigrid div.pDiv  div.pButton.pBtnOver
+  {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #dedede;
+  border-radius:3px;
+  cursor: pointer;
+}
+
+.flexigrid div.pDiv  div.pButton span {
+  width: 22px;
+  height: 22px;
+  display: block;
+  float: left;
+}
+
+.flexigrid div.pDiv  div.pButton:hover span,.flexigrid div.pDiv  div.pButton.pBtnOver span
+  {
+  width: 22px;
+  height: 22px;
+  background:#fff;
+}
+/*
+.flexigrid .pSearch {
+  background: url(images/magnifier.png) no-repeat center;
+}
+
+.flexigrid .pFirst {
+  background: url(images/first.gif) no-repeat center;
+}
+
+.flexigrid .pPrev {
+  background: url(images/prev.gif) no-repeat center;
+}
+
+.flexigrid .pNext {
+  background: url(images/next.gif) no-repeat center;
+}
+
+.flexigrid .pLast {
+  background: url(images/last.gif) no-repeat center;
+}
+
+.flexigrid .pReload {
+  background: url(images/load.png) no-repeat center;
+}
+*/
+.flexigrid .pReload.loading {
+  background: url(images/load.gif) no-repeat center;
+}
+
+/* ie adjustments */
+.flexigrid.ie div.hDiv th div,.flexigrid.ie  div.bDiv td  div,div.colCopy.ie div
+  /* common inner cell properties*/ {
+  overflow: hidden;
+}
+
+
+@font-face {
+  font-family: 'Entypo';
+  src: url('../font/Entypo.eot');
+  src: url('../font/Entypo.eot?#iefix') format('embedded-opentype'),
+    url('../font/Entypo.svg#Entypo') format('svg'),
+    url('../font/Entypo.woff') format('woff'),
+    url('../font/Entypo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon-grid]:before {
+  font-family: 'Entypo';
+  content: attr(data-icon);
+  speak: none;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-grid-"]:before, [class*=" icon-grid-"]:before {
+  font-family: 'Entypo';
+  font-style: normal;
+  speak: none;
+  font-size:18px;
+  line-height:24px;
+  color:#777777;
+}
+.icon-grid-refresh:before {
+  content: "\0038";
+  padding-top:2px;
+  padding-left:4px;
+}
+.icon-grid-first:before {
+  content: "\0031";
+}
+.icon-grid-last:before {
+  content: "\0034";
+  padding-left:2px;
+}
+.icon-grid-up:before {
+  content: "\0035";
+}
+.icon-grid-down:before {
+  content: "\0036";
+  font-size:12px;
+  padding-left:4px;
+}
+.icon-grid-preview:before {
+  content: "\0037";
+}
+.icon-grid-prev:before {
+  content: "\0032";
+}
+.icon-grid-next:before {
+  content: "\0033";
+  padding-left:2px;
+}
+
+body { overflow-x: hidden; padding-bottom: 20px;}
+fieldset { clear:both;border:1px solid #eaeaea; padding:0px 15px 15px; margin-bottom:10px;}
+fieldset:hover { border:1px solid rgba(82,168,236,0.6);}
+fieldset legend { color:#0088CC; margin-left:15px; font-weight:700; padding:0 5px;font-size: 14px;width:auto;border:none;margin-bottom:0px; }
+fieldset div.area { margin-top: 10px; }
+fieldset div.area .no-border { margin-left:-2px;border-radius: 0px 4px 4px 0px; }
+fieldset div.area span:not(:first-child){margin-left:10px;}
+input, textarea, select, .uneditable-input { margin-bottom: 0px; }
+
+.btn i {font-size:16px;margin-right:5px;}
+
+label { display: inline; }
+
+i { font-size: 15px;margin: 0 3px; }
+
+a { cursor: pointer; }
+
+a:hover i { text-decoration: none; }
+
+.tn-form-table tr td:first-child{text-align:right;width:100px;}
+.tn-form-table tr td:last-child{padding-left:10px;}
+.table td a{margin-left:10px;}
+.table-inner-table{text-align:center;}
+.table-inner-table tr td:first-child{text-align:center;width:auto;}
+.table-inner-table tr td:last-child{padding-left:0;}
+
+.float-left{float:left;}
+.float-right{float:right;}
+
+.wizard p { height: 30px;line-height: 30px;border-right: 1px solid #CCC;border-top: 1px solid #CCC;text-align:center;border-bottom: 3px solid #CCC;background-color: #DDD;opacity: 0.4;margin-left:0px;cursor:pointer; }
+.wizard p:nth-child(1) { border-left: 1px solid #CCC; }
+.wizard p.active { background-color: #FFF;border-bottom: 3px solid #0088CC;opacity: 0.8;cursor:auto;font-weight: bold; }
+.wizard [class*="span"] { margin-left: 0px; }
+.wizard [class*="span"]:nth-child(1) { margin-left: 20px; }
+
+.wizard-content { padding: 20px 10px 20px 10px;margin-bottom: 30px;border:1px solid #CCC; }
+.wizard-content .span2 { width: 80px; }
+
+.wizard-item { margin: 20px 0px; }
+.wizard-item .row { margin-top: 10px; }
+.wizard-item label { margin-bottom: 0px; }
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  display: inline-block;
+  height: auto;
+  padding: 5px;
+  margin-bottom: 0px;
+  font-size: 13px;
+  line-height: 18px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.container-fluid h4:nth-child(1) { margin: 0 0 10px; }
+
+
+input[type="radio"], input[type="checkbox"] {
+    cursor: pointer;
+    line-height: normal;
+    margin: 3px 0 8px;
+}
+
+input:-moz-placeholder {
+    color: #999999;
+}
+input[readonly], select[readonly], textarea[readonly] {
+    background-color: #fff;
+    border-color: #ccc;
+    cursor: auto;
+}
+
+.accordion-inner { background-color: rgba(128, 128, 128, 0.1); }
+select.ver-error,textarea.ver-error, input.ver-error{border-color:#B94A48;background:rgba(255, 0, 0, 0.1)}
+select.ver-error:focus, textarea.ver-error:focus, input.ver-error:focus{border-color:#B94A48;box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(185, 74, 72, 0.6);}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    left: 0;
+    margin-bottom: 0;
+    position: fixed;
+    right: 0;
+    z-index: 888;
+}

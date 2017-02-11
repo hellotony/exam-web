@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/**收款申请单 开始**/
+.payment_form{ top:5%;}
+.cancel_order_right p.Payment{ float:left; margin-right:30px; }
+.receipt_help{ float:left; padding:10px 0; margin:10px 0 0 0; width:980px; border-bottom:1px solid #ccc;}
+.receipt_help a{ float:left; width:100%; padding:4px 0;}
+.receipt_help a p{ float:left;  text-decoration:underline; padding:0 10px; color:#0081cc;}
+.receipt_help span{ float:left; width:100%; padding:0 0 10px 0;}
+.receipt_help a.button{ width:120px; font-size:14px; height:24px; line-height:24px;}
+.receipt_switch a {
+	margin-left: 20px;
+}
+.receipt_switch span {
+	margin-left:  30px;
+}
+/**收款申请单 结束**/

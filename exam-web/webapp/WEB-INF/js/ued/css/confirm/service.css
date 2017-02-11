@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**上门服务弹窗 开始**/
+.service_window{ display:none; position:absolute; border:1px solid #ccc; width:880px; height:auto; background:#fff;}
+.service_window_title{ width:100%; float:left; border-bottom:1px solid #ccc; height:40px; line-height:40px;}
+.service_window_title strong{ float:left; margin-left:20px; font-size:16px;}
+.service_window_title a{ float:right; background:url(../images/date_del_stop.jpg) 0px no-repeat; width:16px; height:16px; padding:0; margin:12px;}
+.service_window_deta{ float:left; padding:22px; width:836px;}
+.service_window_deta li{ float:left; width:100%; min-height:40px; line-height:42px;}
+.service_window_deta li.door{ height:65px; line-height:63px;}
+.service_window_deta li span{ float:left; width:116px; border-bottom:1px dashed #ccc; border-top:1px solid #fff; background:#f2f2f2;}
+.service_window_deta li span p{ float:right;}
+.service_window_deta li span .red{ float:right;}
+.service_details{ float:left; width:706px; margin-left:12px;}
+.service_details p{ float:left; margin:0 5px;}
+.service_details input{ height:24px; margin-top:7px;}
+.service_details input.service_input{ margin-top:9px;}
+.service_details select{ height:26px; margin-top:8px;}
+.service_window_deta li .service_details .red{ line-height:26px; margin-top:4px;}
+.service_window_deta li .service_details .invoice_input{ margin-top:2px;}
+.service_window_deta li .service_details .invoicep{ line-height:28px;}
+.door_amount{ float:left;}
+.door_amount b{ float:left;}
+.service_details textarea{ height:50px; margin-top:7px; border: 1px solid #ddd;
+box-sizing: border-box;
+resize: none;}
+.service_button{ float:left; width:300px; padding-left:300px; padding-top:30px;}
+.service_button a{ margin:0 10px; width: 100px;
+height: 34px;
+background: #f2f2f2;
+border: 1px solid #ccc;
+font-size: 16px;
+float: left;
+color: #333;
+padding: 0;
+text-align: center;
+line-height: 34px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;}
+.service_button a.hover{width: 100px;
+height: 34px;
+background: #006ecc;
+border: 1px solid #4aa3df;
+font-size: 16px;
+float: left;
+color: #fff;
+padding: 0;
+text-align: center;
+line-height: 34px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;}
+.service_button a:hover{width: 100px;
+height: 34px;
+background: #006ecc;
+border: 1px solid #4aa3df;
+font-size: 16px;
+float: left;
+color: #fff;
+padding: 0;
+text-align: center;
+line-height: 34px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;}
+/**上门服务弹窗 结束**

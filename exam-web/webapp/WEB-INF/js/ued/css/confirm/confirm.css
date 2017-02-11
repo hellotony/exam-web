@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**变更记录 开始**/
+.records{ position: fixed; left:23%; top:20%; z-index:111111; display:none; width:980px; padding:15px; background:#fff; border:1px solid #e4e4e4;}
+.records .cancel_order_top{ width:960px; margin-bottom:20px;}
+/**变更记录 结束**/
+
+.records_title{ float:left; width:100%; padding:20px 0 10px 0; font-weight:bold;}

@@ -1,0 +1,504 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**右侧滑块 开始**/
+/* .slide-tool{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+    bottom: 0;
+    left: 0;
+} */
+.slide_block {
+	position: fixed;
+	bottom: 200px;
+	border: none !important;
+	z-index: 1000;
+	right: 48px;
+}
+
+.slide_block_ul {
+	
+}
+
+.slide_block ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.slide_block .slide_block_eject {
+	display: block;
+	position: absolute;
+	padding-right: 15px;
+	right: 101%;
+	background: #fff;
+	border: 1px solid #ddd;
+	width: 400px;
+	min-height: 70px;
+	-webkit-box-shadow: 0 0 10px;
+	-moz-box-shadow: 0 0 10px;
+	box-shadow: 0 0 10px;
+}
+
+.slide_block_li {
+	width: 150px;
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+	background-color: #8dc63f;	
+	cursor: pointer;
+}
+
+.slide_block_li.active {
+	background: #767778;
+}
+
+.slide_block_li:hover {
+	background-color: #767778;
+	color: #000;
+}
+
+.slide_block_li a {
+	color: #ffffff;
+}
+
+.slide_block_eject span {
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+}
+
+.slide_block_eject li {
+	float: left;
+	width: 25%;
+	padding-left: 15px;
+}
+
+.slide_block_eject li.auto {
+	width: auto;
+}
+
+.slide_block_eject.batch_download li {
+	width: 910px;
+	margin: 4px 0;
+}
+
+.slide_block_eject table td a {
+	display: inline;
+	text-decoration: none;
+}
+
+.slide_block_eject>li>a {
+	border: 1px solid #ddd;
+	display: inline-block;
+	width: 110%;
+	text-align: center;
+	line-height: 28px;
+	height: 28px;
+	cursor: pointer;
+}
+
+.slide_block_eject>li> a:hover {
+	color: #fff;
+	background: rgb(255, 146, 27);
+	border: 1px solid #FF921B;
+}
+
+.slide_block_eject>li a:hover p {
+	color: #fff;
+}
+
+.slide_block_eject li.auto a {
+	width: auto;
+	padding: 0 10px;
+}
+
+.slide_block .communication {
+	display: none;
+	top: 0;
+	height: 70px;
+}
+
+.slide_block .communication li {
+	width: 25%;
+	padding-left: 15px;
+	padding-top: 20px;
+}
+
+.slide_block .operation {
+	display: none;
+	top: 72px;
+	height: 70px;
+}
+
+.slide_block .operation li {
+	width: 25%;
+	padding-left: 15px;
+	padding-top: 20px;
+}
+
+.slide_block .financial_affairs {
+	display: none;
+	top: 144px;
+}
+
+.slide_block .financial_affairs li {
+	padding-top: 4px;
+}
+
+.slide_block .agreement {
+	display: none;
+	top: 216px;
+}
+
+.slide_block .agreement li {
+	padding-top: 4px;
+}
+
+.slide_block .member {
+	display: none;
+	width: 300px;
+	top: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.slide_block .member li {
+	width: 100%;
+	overflow: hidden;
+}
+
+.slide_block .slide_block_eject  li label {
+	float: left;
+	width: 80px;
+	height: 26px;
+	line-height: 26px;
+	text-align: right;
+	background: #d2d2d2;
+	margin-bottom: 5px;
+}
+
+.member li span {
+	display: inline-block;
+	text-align: left;
+	margin-left: 15px;
+	font-size: 12px;
+	height: 26px;
+	text-align: left;
+	margin-left: 15px;
+	font-size: 12px;
+	height: 26px;
+	line-height: 26px;
+}
+
+.member li p a.privilege {
+	border: 0;
+	font-size: 12px;
+	display: inline;
+	margin-left: 5px;
+	color: #007DCC
+}
+
+.slide_block .batch_download {
+	display: none;
+	width: 910px;
+	bottom: 74px;
+	padding-left: 15px;
+}
+
+.slide_block .batch_download strong {
+	color: #000;
+}
+
+.batch_download input {
+	
+}
+
+.slide_block_eject.batch_download li a {
+	border: 0;
+	width: auto;
+	text-decoration: underline;
+	color: #007DCC;
+	margin: 0 5px;
+}
+
+.slide_block_eject.batch_download li a:hover {
+	background: none;
+}
+
+.slide_block_eject.batch_download li input {
+	float: left;
+}
+
+.batch_download .red {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 20px;
+	float: left;
+}
+
+.slide_block .financial_summary {
+	display: none;
+	bottom: 2px;
+}
+
+.slide_block .financial_summary>li span {
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	text-align: left;
+}
+
+.slide_block  .financial_summary>li a {
+	border: 1px solid #ccc;
+	height: 26px;
+	line-height: 26px;
+	width: 80px;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+}
+.slide_block  .financial_summary>li a:hover {
+	color:#fff;
+	background: rgb(255, 146, 27);
+}
+/**右侧滑块 结束**/
+
+/**短信 开始**/
+.message {
+	position: fixed;
+	left: 23%;
+	top: 50%;
+	z-index: 111111;
+	margin-top: -350px;
+	display: none;
+	width: 1000px;
+	padding: 15px;
+	background: #fff;
+	border: 1px solid #e4e4e4;
+}
+
+.message .cancel_order_top, .message .cancel_order_deta {
+	width: 980px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.message .cancel_order_right input.pro {
+	width: 305px;
+	padding-left: 5px;
+	float: left;
+	height: 24px;
+	margin: 0;
+}
+
+.message .cancel_order_right {
+	width: 830px;
+}
+
+.message .cancel_order_right select {
+	float: left;
+	width: 200px;
+}
+
+.message .cancel_order_right textarea {
+	width: 450px;
+}
+
+.message_prompt {
+	float: left;
+	font-size: 12px;
+	padding-left: 20px;
+	line-height: 30px;
+}
+
+.message_prompt .red {
+	display: inline;
+	font-size: 12px;
+}
+
+.message table {
+	margin-top: 20px;
+}
+
+.message table a {
+	text-decoration: underline;
+	color: #0088cc;
+	float: left;
+	padding: 0 5px;
+}
+/**短信 结束**/
+
+/**传真 开始**/
+.message .fun_button {
+	padding-left: 12px;
+	height: 26px;
+	line-height: 26px;
+}
+
+.sure {
+	margin-left: 90px;
+}
+
+.message .red {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+/**传真 结束**/
+
+/**转单 开始**/
+.popup_single {
+	position: fixed;
+	width: 260px;
+	z-index: 111111;
+	left: 40%;
+	top: 40%;
+	display: none;
+	background: #fff;
+	border: 1px solid #e4e4e4;
+	padding: 15px;
+}
+
+.popup_single li {
+	width: 100%;
+	float: left;
+	line-height: 24px;
+}
+
+.popup_single li span, .popup_single li .red {
+	float: left;
+}
+
+.popup_single li input {
+	width: 200px;
+	height: 24px;
+	margin-left: 10px;
+}
+
+.popup_single a {
+	padding-left: 12px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 50px;
+}
+/**转单 结束**/
+
+/**变更记录 开始**/
+.records {
+	position: fixed;
+	left: 23%;
+	top: 20%;
+	z-index: 111111;
+	display: none;
+	width: 980px;
+	padding: 15px;
+	background: #fff;
+	border: 1px solid #e4e4e4;
+}
+
+.records .cancel_order_top {
+	width: 960px;
+	margin-bottom: 20px;
+}
+/**变更记录 结束**/
+.records_title {
+	float: left;
+	width: 100%;
+	padding: 20px 0 10px 0;
+	font-weight: bold;
+}
+
+
+
+
+/**发票 开始**/
+
+/* .cancel_order_deta .explain span {
+	width: 100%;
+	text-align: left;
+	font-weight: bold;
+}
+
+.invoice .cancel_order_deta li {
+	margin: 1px 0;
+}
+
+.cancel_order_right .explain p {
+	height: auto;
+	line-height: 18px;
+	font-size: 12px;
+}
+
+.cancel_order_right a.button {
+	width: 60px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	margin: 4px 8px;
+	text-decoration: none;
+}
+
+.cancel_order_right a.reset {
+	width: 60px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	margin: 4px 8px;
+	background-color: #DA4F49;
+	border-color: #DA4F49;
+	text-decoration: none;
+}
+
+.cancel_order_right a.reset:hover {
+	background-color: #F77507;
+} */
+/**发票 结束**/
+
+/**财务结算 开始**/
+.settlement {
+	float: left;
+}
+
+.settlement dt {
+	float: left;
+	width: 100%;
+	padding: 5px 0;
+	font-weight: bold;
+}
+
+.settlement dd {
+	width: 100%;
+	float: left;
+}
+/**财务结算 结束**/
+
+/**订单价格变更 开始**/
+.invoice strong {
+	float: left;
+	width: 100%;
+	padding-top: 10px;
+	font-size: 16px;
+}
+
+/* .invoice table td input {
+	width: 100%;
+	height: 100%;
+} */
+
+.invoice table td span {
+	float: left;
+}
+
+.invoice table td p {
+	float: left;
+	width: auto;
+	margin-right: 5px;
+}
+
+.invoice table td .red {
+	float: left;
+}
+/**订单价格变更 结束**/

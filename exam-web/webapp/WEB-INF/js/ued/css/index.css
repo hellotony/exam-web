@@ -1,0 +1,583 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**
+任务说明开始
+**/
+.descs {
+	width:1148px;
+	float:left;
+	border:2px solid #ff9933;
+	background:#fffaf2;
+	height:auto;
+}
+.desc_top {
+	width: 1112px;
+	height:36px;
+	float:left;
+	line-height:36px;
+	text-align:left;
+	padding-left:36px;
+}
+.desc_top a{
+	text-decoration: none;
+}
+.desc_top strong {
+	font-size:18px;
+	color:#ff9933;
+}
+.desc_deta {
+	margin:8px 12px 12px 20px;
+	float:left;
+	width:1124px;
+	height:auto;
+}
+.desc_deta p, .desc_deta b {
+	width:1124px;
+	float:left;
+	line-height:20px;
+}
+.desc_deta b {
+	line-height:24px;
+}
+/**
+任务说明结束
+**/
+/**
+下单选择 开始
+**/
+.place {
+	width:1152px;
+	height:60px;
+	float:left;
+	line-height:50px;
+}
+.place_routine {
+	width:230px;
+	float:left;
+}
+.place_routine input {
+	float:left;
+	margin-top:18px;
+}
+.routine {
+	float:left;
+}
+.routine b, .routine p {
+	float:left;
+	margin:0 3px;
+}
+.routine p {
+	color:#F00;
+}
+/**
+下单选择 结束
+**/
+
+/**
+接单备注 开始
+**/
+.single textarea {
+	width:1118px;
+	padding:5px;
+	min-height:20px;
+	border:1px solid #ddd;
+	box-sizing: border-box;
+	resize:both;
+}
+/**
+接单备注 结束
+**/
+
+/**
+核对订单 开始
+**/
+.check {
+	width:1150px;
+	float:left;
+	padding:20px 0;
+}
+.check_choice {
+	width:400px;
+	float:right;
+	height:28px;
+	margin:5px;
+}
+.check_choice_in {
+	float:left;
+	width:400px;
+	margin:5px;
+}
+.u7_input {
+	float:right;
+	width:172px;
+	margin-right:15px;
+	margin-top:5px;
+}
+.check_choice p {
+	float:right;
+	width:188px;
+	text-align:center;
+	height:26px;
+	line-height:26px;
+	background:#e1e2e1;
+	border:1px solid #999;
+}
+
+/**
+核对订单 结束
+**/
+
+
+
+
+
+
+
+/***************************************详情页 开始****************************************************/
+
+
+
+
+
+
+/**
+头部导航 开始
+**/
+.deta_top {
+	width:1150px;
+	top:0;
+	position:fixed;
+	z-index:1;
+	height:41px;
+	line-height:40px;
+	border:1px solid #e4e4e4;
+	background:none repeat scroll 0 0 rgba(220, 235, 236, 0.95);
+}
+.deta_top ul {
+	float:left;
+	width:620px;
+	height:40px;
+}
+.deta_top ul li {
+	float:left;
+	height:40px;
+	text-align:center;
+	border-right: 1px solid rgb(216, 216, 216);
+}
+.deta_top ul li a {
+	padding:0 8px;
+	font-size:12px;
+}
+.deta_top ul li a:hover {
+	background:rgb(234, 244, 245);
+}
+.deta_top_right {
+	float:right;
+	max-width:530px;
+	margin-right:0px;
+}
+.deta_top_right span {
+	float:left;
+	margin:0 2px;
+}
+.deta_top_right span p {
+	float:left;
+	font-size:12px;
+}
+.deta_price {
+	float:left;
+	font-size:12px;
+}
+.deta_price span {
+	float:left;
+	font-size:12px;
+	padding-left:4px;
+	color:#5481d3;
+}
+.deta_price strong {
+	float:left;
+	font-size:12px;
+	padding:0 4px;
+	font-size:14px;
+	color:#ff0000;
+}
+/**
+头部导航 结束
+**/
+
+
+/**
+流程 开始
+**/
+.deta_process {
+	float: left;
+	width: 1150px;
+	padding: 15px 0;
+	background: #fff;
+	border: 1px solid #e4e4e4;
+	border-bottom: 0;
+}
+.deta_process ul {
+	float: left;
+width: 1114px;
+height: 41px;
+margin-left: 22px;
+border: 2px solid #ccc;
+}
+.deta_process ul li {
+	width:122px;
+	height:45px;
+	margin-left:-15px;
+	margin-top:-2px;
+	float:left;
+	text-align:center;
+	line-height:45px;
+}
+.deta_process ul li a {
+	background:url(../images/ug1779.png) no-repeat;
+	color:#777;
+	line-height: 23px;
+}
+.deta_process ul li a span{
+	color:#777;
+  	min-height: 23px;
+}
+.deta_process ul li a.hover {
+	background:url(../images/ug3.png) no-repeat;
+	z-index:111;
+	color: rgb(255, 163, 0);
+}
+.deta_process ul li a.selected {
+	color: #4AC728!important;
+}
+.deta_process ul li a.have {
+	background:url(../images/ug11.png) no-repeat;
+	color: rgb(0, 122, 255);
+}
+.deta_process ul li a p {
+	font-size: 12px;
+	color: #0081cc;
+}
+/**
+流程 结束
+**/
+
+
+
+/**
+权限 开始
+**/
+.deta_jur {
+	float: left;
+	width: 1150px;
+	background: #fff;
+	border: 1px solid #e4e4e4;
+	border-top: 0;
+	padding-bottom:15px;
+}
+.deta_jur ul {
+	float:left;
+	width:1140px;
+	margin:5px 0;
+	margin-left:10px;
+	line-height:26px;
+}
+.deta_jur ul li {
+	float:left;
+	padding:5px 0px;
+	overflow:hidden;
+	width:220px;
+	height:20px;
+}
+.deta_jur ul li p {
+	float:left;
+	text-align:right;
+}
+.deta_jur ul li span {
+	float:left;
+	text-align:left;
+}
+/**
+权限 结束
+**/
+
+/**
+备忘 开始
+**/
+.memo {
+	margin-top:20px;
+}
+.memo_follow {
+	width:1132px;
+	float:left;
+}
+.memo_follow_state, .memo_follow_memo {
+	width:1132px;
+	height:36px;
+}
+.memo_follow_state p {
+	float:left;
+}
+.memo_follow_state input {
+	float:left;
+}
+.memo_follow_state span {
+	float:left;
+	padding:0 5px;
+}
+.memo_follow_memo input, .memo_follow_memo p, .u18_input {
+	float:left;
+	margin:0 5px;
+}
+.border_style .button.memo_button {
+	height: 24px;
+	line-height: 24px;
+	font-size: 13px;
+	width: 80px;
+	margin-left: 10px;
+	margin-top: 2px;;
+}
+.memo_search_button {
+	float:left;
+	height: 24px;
+}
+.memo_follow_input_box {
+	float:left;
+	width:1130px;
+	border:1px solid #ccc;
+	margin-top:10px;
+}
+.memo_follow_memo input[type=checkbox] {
+	margin-top: 5px;
+}
+.memo_follow_input_box p {
+	float:left;
+	background:#f2f2f2 url(../images/memo.png) 10px no-repeat;
+	height:30px;
+	width:1130px;
+	border-bottom:1px solid #ccc;
+}
+.memo_follow_input_box textarea {
+	width:1128px;
+	min-height:100px;
+	border:1px solid #fff;
+	box-sizing: border-box;
+	resize:none;
+}
+.memo_follow_hidden_note {
+	float:left;
+	width:1130px;
+	padding: 6px 10px 6px 0;
+}
+.umemo_input {
+	float:left;
+	width:200px;
+	margin-top:5px;
+	margin-left:10px;
+}
+.memo_follow_hidden_note a.expandBtn {
+	margin-top: 8px;
+}
+.follow_exhibition {
+	float:left;
+	width:1130px;
+}
+.exhibition_ask {
+	float:left;
+	width:1128px;
+	margin:2px 0 0 0;
+	border:1px solid #b2b2b2;
+	-moz-border-radius:6px;      /* Gecko browsers */
+	-webkit-border-radius:6px;   /* Webkit browsers */
+	border-radius:6px;            /* W3C syntax */
+	cursor: pointer;
+}
+.exhibition_ask:hover {
+	background:#fcf3e3;
+}
+.exhibition_ask.active {
+	background:#fcf3e3;
+}
+.exhibition_deta span.memoPreview {
+	width: 500px;
+	padding: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.exhibition_ask.active .memoPreview {
+	display: none;
+}
+.exhibition_ask .exhibition_content {
+	display: none;
+}
+.exhibition_ask.active .exhibition_content{
+	display: block;
+}
+.exhibition_ask span {
+	float:left;
+	width:1107px;
+	line-height:24px;
+	font-size:12px;
+	color:#666;
+	padding:6px 10px;
+}
+.border_style .exhibition_ask a {
+	padding:0;
+}
+.exhibition_ask span b {
+	float:left;
+	font-size:12px;
+}
+.exhibition_ask span p{ float:left;}
+.memo_time {
+	float:right;
+	font-size:12px;
+}
+.exhibition_ask span strong {
+	float:none;
+	color:#F00;
+	font-weight:100;
+}
+.exhibition_deta {
+	float:left;
+	border-bottom:1px solid #b2b2b2;
+	width:1129px;
+	-moz-border-radius:6px;      /* Gecko browsers */
+	-webkit-border-radius:6px;   /* Webkit browsers */
+	border-radius:6px;            /* W3C syntax */
+}
+.exhibition_deta span{ float:left; width:1107px;}
+.exhibition_deta p{ float:left; width:900px; font-size:12px;}
+.exhibition_deta b{ float:left; margin-right:20px; font-size:12px;}
+.memo_contraction {
+	float:left;
+	width:1107px;
+	font-size:12px;
+	color:#666;
+	padding:6px 10px;
+	border:1px solid #b2b2b2;
+	line-height:18px;
+	border-bottom:0;
+	-moz-border-radius:6px;      /* Gecko browsers */
+	-webkit-border-radius:6px;   /* Webkit browsers */
+	border-radius:6px;            /* W3C syntax */
+}
+/**
+备忘 结束
+**/
+/**
+促销开始
+**/
+.pmf_input{
+	line-height: 16px;
+	width: 250px;
+	height: 30px;
+	margin: 2px;
+}
+.border_style .button.pmf_bind_button{
+	margin-left: 10px;
+}
+/**
+促销结束
+**/
+/**
+出游人 开始
+**/
+.deta_travel table {
+	border-top:1px solid #f0f0f0;
+	border-left:1px solid #f0f0f0;
+}
+.deta_travel td {
+	height:30px;
+	line-height:30px;
+	background:#f9f9f9;
+	/*padding-left:5px;*/
+	border-right:1px solid #f0f0f0;
+	border-bottom:1px solid #ddd;
+}
+.deta_travel td .red.deta_travel {
+	float:left;
+	width:6px;
+	margin:0;
+}
+/**
+出游人 结束
+**/
+
+/**
+出游需求 开始
+**/
+.travel_demand_ul {
+	float:left;
+	width:1130px;
+	margin-bottom:10px;
+}
+.travel_demand_ul li {
+	float:left;
+	height:40px;
+	line-height:40px;
+	width:1130px;
+}
+.travel_demand_ul li span {
+	float:left;
+	margin:0 80px 0 0;
+	width:190px;
+}
+.travel_demand_ul li span b {
+	float: left;
+width: 85px;
+text-align: right;
+}
+.travel_demand_ul li span p {
+	float:left;
+}
+/**
+出游需求 结束
+**/
+/**
+取消说明 开始
+**/
+.cancel {
+	float:left;
+	width:1142px;
+	margin:20px 0;
+	padding-left:10px;
+}
+
+/**
+取消说明 结束
+**/
+/**
+软电话链接样式
+*/
+.sp_link{
+	color:rgb(0, 122, 255);
+	font-size:13px;
+}
+
+/**
+接单页 无效订单按钮样式
+*/
+.check_choice_in p {
+	float:right;
+	width:188px;
+	text-align:center;
+	height:26px;
+	line-height:26px;
+	background:#006ecc;
+	border:1px solid #4aa3df;
+	padding:0;
+	text-align:center;
+	-moz-border-radius: 4px;      /* Gecko browsers */
+	-webkit-border-radius: 4px;   /* Webkit browsers */
+	border-radius:4px;            /* W3C syntax */
+}
+.check_choice_in p a {
+	color:#FFFFFF;  
+	text-decoration: none;
+}
+.check_choice_in p a:hover {
+	background: #54ade9;
+}

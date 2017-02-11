@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**发票 开始**/
+.cancel_order_deta .explain span{ width:100%; text-align:left; font-weight:bold;}
+.invoice .cancel_order_deta li{ margin:1px 0;}
+.cancel_order_right .explain p{ height:auto; line-height:18px; font-size:12px;}
+.cancel_order_right a.button{ width:60px; height:24px; line-height:24px; font-size:12px; margin:4px 8px; padding-top: 2px;}
+/**发票 结束**/

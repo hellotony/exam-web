@@ -1,0 +1,178 @@
+.calendar-on{
+	margin-top: 30px;
+	border: 1px solid #EAE7E7;
+}
+.calendar-price {
+	/* padding-top: 25px; */
+	position: relative;
+	display: none;
+	padding-bottom: 20px;
+}
+.calendar-price *{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+.calendar-price .kalendae {
+	width: 100%;
+	border: 1px solid #ccc;
+	background: transparent;
+	padding: 0 0 1px 0;
+}
+
+.calendar-price .kalendae .k-calendar {
+	width: 50%;
+    padding: 10px 13px;
+    box-sizing: border-box;
+}
+
+.calendar-price .kalendae .k-title, .calendar-price .kalendae .k-header, .calendar-price .kalendae .k-days {
+	width: 100%;
+}
+
+.calendar-price .kalendae .k-header, .calendar-price .kalendae .k-days {
+	/* background: #f9f9f9; */
+}
+
+
+
+.calendar-price .kalendae .k-title {
+	height: 40px;
+	float: left;
+	text-align: center;
+	line-height: 25px;
+	padding-bottom: 10px;
+}
+
+
+
+.calendar-price .kalendae .k-caption {
+	display: block;
+    font-size: 16px;
+    color: #666;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 85.7142%;
+    border: 2px solid #fff;
+    background-color: #e0e0e0;
+}
+.calendar-price .kalendae .k-calendar:first-child .k-caption{
+	float: right;
+}
+.calendar-price .kalendae .k-calendar:last-child .k-caption{
+	float: left;
+}
+
+.calendar-price .kalendae .k-btn-previous-month {
+	background: url(button_left.png) no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    width: 14.2857%;
+    height: 40px;
+    left: 0;
+    top: 0;
+    padding: 0;
+    /* margin: 0 3px; */
+    border: 2px solid #fff;
+    float: left;
+    position: relative;
+}
+
+.calendar-price .kalendae .k-first-month .k-btn-next-month, .calendar-price .kalendae .k-last-month .k-btn-previous-month {
+	display: none;
+}
+
+.calendar-price .kalendae .k-btn-next-month {
+	background: url(button_right.png) no-repeat;
+    display: block;
+    background-size: 100% 100%;
+    border: 2px solid #fff;
+    width: 14.2857%;
+    height: 40px;
+    right: 0;
+    padding: 0;
+    /* margin: 0 3px; */
+    top: 0;
+    border-top: 2px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.calendar-price .kalendae .k-header span {
+	background-color: #D7D7D7;
+	margin: 0px;
+    width: 14.2857%;
+    border: 2px solid #fff;
+    height: 36px;
+}
+
+.calendar-price .kalendae .k-days span[data-date] {
+	padding: 0;
+    background: #e0e0e0;
+    width: 14.2857%;
+    height: 60px;
+    border: 2px solid #fff;
+    margin: 0;
+}
+
+.calendar-price .kalendae .k-days span.k-active {
+	color: #0088cc;
+}
+
+.calendar-price .kalendae .k-days span.k-selected.k-active {
+	background: #EAE9E9
+}
+
+.calendar-price .kalendae .k-btn-previous-month:after, .calendar-price .kalendae .k-btn-next-month:after {
+	content: "";
+}
+
+.calendar-price .kalendae .k-separator {
+	width: 0px;
+	display: none;
+}
+
+.calendar-price .date_cancel {
+	position: absolute;
+	background: url(date_cancel.jpg) no-repeat;
+	width: 37px;
+	height: 37px;
+	right: 0;
+	top: -18px;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+.calendar-price .kalendae .k-days span.k-active span {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.calendar-price .kalendae .k-days span.k-active p, .calendar-price .kalendae .k-days span.k-active span, .calendar-price .kalendae .k-days span.k-active .price {
+	height: 18px;
+	line-height: 18px;
+	float: left;
+	width: 67px;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+p.yp{
+	color: #F90;
+}
+
+.specific_date, .their {
+	float:left;
+}
+
+.specific_date {
+	width:25%;
+}
+
+.their {
+	width:70%;
+	color: red;
+}

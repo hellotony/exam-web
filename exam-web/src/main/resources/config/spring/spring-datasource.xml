@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:jms="http://www.springframework.org/schema/jms" xmlns:jee="http://www.springframework.org/schema/jee"
+	   xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:tx="http://www.springframework.org/schema/tx"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+	http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms.xsd
+	http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+	<bean id="configurerSupportMultiEnvironment" class="com.exam.support.mybatis.multiEnv.PropertyPlaceholderConfigurerSupportMultiEnvironment">
+		<property name="locations">
+			<list>
+				<value>classpath:config/resource/config.properties</value>
+			</list>
+		</property>
+
+		<property name="placeholderConfigLocations">
+			<list>
+				<value>classpath:config/resource/proxy_@{envName}.properties</value>
+			</list>
+		</property>
+		<property name="placeholderPrefix" value="@{" />
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+	</bean>
+
+	<jee:jndi-lookup id="exam_datasource_master" jndi-name="@{datasource.jndiName}"
+					 proxy-interface="javax.sql.DataSource" lookup-on-startup="false">
+	</jee:jndi-lookup>
+	<jee:jndi-lookup id="exam_datasource_slave" jndi-name="@{datasource.jndiName.slave}"
+					 proxy-interface="javax.sql.DataSource" lookup-on-startup="false">
+	</jee:jndi-lookup>
+
+	<bean class="com.exam.support.base.DynamicDataSource" id="dataSource">
+		<property name="targetDataSources">
+			<map key-type="java.lang.String">
+				<entry value-ref="exam_datasource_master" key="master"></entry>
+				<entry value-ref="exam_datasource_slave" key="slave"></entry>
+			</map>
+		</property>
+		<property name="defaultTargetDataSource" ref="exam_datasource_master" ></property>
+	</bean>
+</beans>

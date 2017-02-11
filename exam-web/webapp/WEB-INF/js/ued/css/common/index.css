@@ -1,0 +1,103 @@
+@charset "utf-8";
+/**需求确认页面  
+**/
+.top_all {
+	margin:0 auto;	
+}
+
+/**出游人信息**/
+.tourist-module .control-label{
+	background-color: #eee;
+    padding-bottom: 7px;
+    padding-right: 0px;  
+}
+.tourist-module .simple-group{
+	z-index: 10;
+	position: absolute;
+	left: 12px;
+	top: 20px;
+}
+.tourist-module .form-group{
+	margin-left: 0;
+}
+.tourist-module .form-wrapper{
+	border: 1px solid #ccc;
+}
+.tourist-module .form-group .btn{
+	margin-left: 0;
+}
+.tourist-link{
+  color: #008000;
+  text-decoration: none;
+}
+.tourist-link:hover {
+  color: #008000;
+  text-decoration: underline;
+}
+.tourist-input{
+	border:1px #ddd solid;
+	padding-top:4px;
+	padding-bottom:6px;
+	padding-left:5px;	
+}
+/** 促销活动 **/
+.pmf-module .pmf-table{
+    color:#999999;
+}
+.pmf-module .pmf-btn{
+	padding-top:0px;
+	padding-bottom:0px;
+}
+.pmf-module .pmf-etc{
+	min-width:50px;
+	max-width:100px;
+}
+/** 订单增补项**/
+.ordersupplement-module .ordersupplement-table{
+	color:#666666;
+}
+.ordersupplement-module .view_sup {
+	display: inline;
+}
+.ordersupplement-module .edit_sup {
+	display: none;
+}
+.ordersupplement-module span.view_sup {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 98%;
+}
+.total_amount {
+	text-align: right;
+	padding-right: 10px;
+}
+/** 出团通知**/
+.mission-module .mission-table td{
+	color:#999999;
+}
+/** 天气预报**/
+.weather-module .weather-span{
+	margin-top:27px;
+}
+/** 购买保险**/
+.inbuy-module .inbuy-table td{
+	color:#666666;
+}
+.inbuy-module .view_sign{
+	 white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     min-width:50px;
+}
+
+/**选择保险**/
+.resSearchDom td{
+	color:#666666;
+}
+.in-module .view_sign{
+	 white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     min-width:50px;
+}

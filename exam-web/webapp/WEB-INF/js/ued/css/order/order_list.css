@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**订单一览表 开始**/
+.transfer{ float:left; width:1000px; margin:10px 0 10px 10px;}
+.insurance table p{ float:left; width:auto;}
+.insurance table .red{ float:left;}
+.insurance table span{ 
+	float:left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 95%;
+}
+.insurance table input{ float:left; height:22px;}
+.insurance table input.order_list_input{ width:50px;}
+
+.insurance table a{ width:auto; padding:0 10px; height:24px; line-height:24px; font-size:12px; /* margin:0 5px; */}
+.insurance table a.fun_button{ height:28px; line-height:28px; padding-left:28px; width:auto;}
+.insurance table a.button{ background: #efefef;
+border: 1px solid #dadada; color:#333;}
+.insurance table a.button:hover{ background:#006ecc; color:#fff;}
+/**订单一览表 结束**/
+
+.insurance_edit span.handoverArea p { padding-bottom: 0; }
+.handoverArea .insurance_search a.button {	
+	margin-top: 3px;
+	margin-left: 5px;
+}
+
+.handover_list_title {
+	margin-left: 20px;
+	clear:both;
+}
+ul.tourOrderListTab{
+	margin-top:20px;
+	padding-left: 80px;
+}
+
+.tourOrderListTab li {
+	float: left;
+	margin-left: 10px;
+}
+
+.tourOrderListTab li a {
+	padding: 0 10px;
+	border: 1px solid #fff;
+	border-bottom: 0;
+	height: 29px;
+	line-height: 29px;
+	color: #0081cc;
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+
+.tourOrderListTab li a.hover {
+	color: #333;
+	border: 1px solid #ccc;
+}
+
+span.ui-icon.ui-icon-triangle-2-n-s {
+    display: none;
+}
+
+button.ui-multiselect.ui-widget.ui-state-default.ui-corner-all {
+  width: 180px;
+  height: 22px;
+}
+
+.colList {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    right: 23px;
+    background-color: #FFF;
+    padding: 5px 20px 5px 5px;
+    border: 1px solid rgba(82, 168, 236, 0.6);
+    margin-right: 6px;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+    z-index: 10;
+    max-height: 177px;
+    overflow-y: auto;
+}
+.colToggle {
+	float:right;
+    margin-right: 20px;
+}
+.colToggle a {
+    color:#0088cc;
+}

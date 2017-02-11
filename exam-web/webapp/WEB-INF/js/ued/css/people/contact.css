@@ -1,0 +1,17 @@
+/** 订单增补项**/
+.ordersupplement-module .view_sup {
+	display: block;
+}
+.ordersupplement-module .edit_sup {
+	display: none;
+}
+.ordersupplement-module span.view_sup {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 98%;
+}
+.total_amount {
+	text-align: right;
+	padding-right: 10px;
+}

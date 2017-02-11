@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/**
+资源占位 开始
+**/
+.occupying{ display:none; position:absolute; width:405px; padding:10px; z-index:1111111; border:1px solid #ccc; background:#fff; height:auto; margin:-40px 0 0 970px;}
+.occupying_title{ float:left; height:26px; line-height:16px; border-bottom:1px solid #ccc; width:405px;}
+.occupying_title strong{ float:left;}
+.occupying_title p{ float:left;}
+.occupying_title a{ float:right; background:url(../images/date_del_stop.jpg) no-repeat; width:16px; height:16px; padding:0;}
+.occupying_deta{ float:left; padding:30px 10px 10px 10px;}
+.occupying_deta li{ float:left; padding-bottom:10px; width:100%;}
+.occupying_deta li span{ float:left; margin:5px;}
+.occupying_deta li span input{ float:left;}
+.occupying_deta li a{ margin-left:150px;}
+/**
+资源占位 结束
+**/

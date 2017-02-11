@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**出团通知 开始**/
+.mission_inform{ float:left; width:1132px;}
+.mission_inform ul{ float:left;}
+.mission_inform ul li{ float:left; width:1132px; padding:5px 0; line-height:30px;}
+.mission_inform ul li span{ float:left; width:80px; height:30px; line-height:24px; text-align:center;}
+.mission_inform ul li span b{ float:right;}
+.mission_inform ul li p{ float:left; margin-right:30px;}
+.mission_inform ul li b{ float:left;}
+.mission_inform ul li a{ float:left; text-decoration:underline;}
+.mission_inform ul li a:hover{ color:#006ecc;}
+.mission_inform ul li a.fun_button{ text-decoration:none; padding-left:12px; margin-right:20px; height:24px; line-height:24px;}
+.mission_inform ul li input[type="text"]{ width:200px;float:left; height:24px; margin-right:20px;}
+.mission_inform ul li input[type="checkbox"]{ float:left; margin-top:9px;}
+.mission_inform ul li textarea {
+width: 628px;
+min-height: 200px;
+border: 1px solid #ccc;
+box-sizing: border-box;
+resize: none;
+}
+/**出团通知 结束**/

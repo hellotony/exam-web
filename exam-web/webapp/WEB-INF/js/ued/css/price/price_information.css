@@ -1,0 +1,19 @@
+/**
+价格信息  开始
+**/
+.price_information{ float:left; padding:5px;}
+.price_information span{ float:left; line-height:35px;}
+.price_information span a{ float:none; display:inline; padding:0 1px;margin-left:-4px;margin-right:-4px;}
+
+.price-c1{
+	color:#333333;
+}
+
+.price-c2{
+    color:#ff6600;	
+}
+
+.pmf-module label{
+	margin-left:-4px;
+	margin-right:-4px;
+}

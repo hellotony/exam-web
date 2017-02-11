@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="exam.IUserDao" >
+    <resultMap id="BaseResultMap" type="com.exam.vo.user.UserVo" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="gender" property="gender" jdbcType="INTEGER"/>
+        <result column="birthday" property="birthday" jdbcType="TIMESTAMP" />
+        <result column="phone" property="phone" jdbcType="VARCHAR"/>
+        <result column="height" property="height" jdbcType="INTEGER" />
+        <result column="weight" property="weight" javaType="INTEGER"/>
+        <result column="blood_type" property="bloodType" jdbcType="VARCHAR" />
+        <result column="company_name" property="companyName" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+      id, name, gender, birthday, phone, height, weight, blood_type, company_name
+    </sql>
+
+    <!-- 根据电话查询 -->
+    <select id="queryByPhone" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM exam_user
+        WHERE phone=#{phone}
+        AND del_flag=0
+    </select>
+
+    <select id="queryUser" resultMap="BaseResultMap">
+        SELECT DISTINCT a.* FROM exam_user a LEFT JOIN exam_answers b
+        on a.id = b.user_id where b.id is not null;
+    </select>
+
+    <update id="updateInfoByPhone" parameterType="com.exam.vo.user.UserVo">
+        update exam_user
+        <set >
+            <if test="name != null" >
+                name = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="gender != null" >
+                gender = #{gender,jdbcType=INTEGER},
+            </if>
+            <if test="birthday != null" >
+                birthday = #{birthday,jdbcType=VARCHAR},
+            </if>
+            <if test="bloodType != null" >
+                blood_type = #{bloodType,jdbcType=INTEGER},
+            </if>
+            <if test="height != null" >
+                height = #{height,jdbcType=INTEGER},
+            </if>
+            <if test="weight != null" >
+                weight = #{weight,jdbcType=INTEGER},
+            </if>
+            <if test="companyName != null" >
+                company_name = #{companyName,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where phone = #{phone,jdbcType=VARCHAR}
+    </update>
+    
+    <insert id="saveUser" parameterType="com.exam.vo.user.UserVo">
+        insert exam_user
+        <set >
+            <if test="name != null" >
+                name = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="phone != null">
+                phone = #{phone,jdbcType=VARCHAR}
+            </if>
+            <if test="gender != null" >
+                gender = #{gender,jdbcType=INTEGER},
+            </if>
+            <if test="birthday != null" >
+                birthday = #{birthday,jdbcType=VARCHAR},
+            </if>
+            <if test="bloodType != null" >
+                blood_type = #{bloodType,jdbcType=INTEGER},
+            </if>
+            <if test="height != null" >
+                height = #{height,jdbcType=INTEGER},
+            </if>
+            <if test="weight != null" >
+                weight = #{weight,jdbcType=INTEGER},
+            </if>
+            <if test="companyName != null" >
+                company_name = #{companyName,jdbcType=VARCHAR},
+            </if>
+        </set>
+    </insert>
+</mapper>

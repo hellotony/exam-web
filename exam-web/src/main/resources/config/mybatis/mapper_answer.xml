@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="exam.IAnswerDao" >
+    <resultMap id="BaseResultMap" type="com.exam.vo.AnswerVo" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="user_id" property="userId" jdbcType="INTEGER" />
+        <result column="title_id" property="titleId" jdbcType="INTEGER"/>
+        <result column="option_id" property="optionId" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <resultMap id="ResultMap" type="com.exam.vo.ResultVo" >
+        <result column="title_id" property="titleId" jdbcType="INTEGER" />
+        <result column="question" property="title" jdbcType="INTEGER"/>
+        <result column="option_id" property="optionId" jdbcType="VARCHAR" />
+        <result column="answer" property="option" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+      id, title_id, user_id, option_id
+    </sql>
+
+    <!-- 查询所有 userId-->
+    <select id="queryAll" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select a.* from exam_answers a LEFT JOIN exam_title b on a.title_id = b.abstract_no
+        where b.type = 2 and a.user_id = #{userId};
+    </select>
+
+    <select id="getResult" resultMap="ResultMap" parameterType="java.lang.Integer">
+        select  e2.abstract_no as title_id, e2.`content` as question,e3.content as answer from exam_answers e1, `exam_title` e2, `exam_options` e3
+        where e1.user_id= #{userId}
+        and e1.title_id=e2.abstract_no
+        and e1.option_id=e3.id
+        and e2.type=1
+    </select>
+
+    <insert id="add" parameterType="com.exam.vo.AnswerVo">
+        INSERT INTO
+        exam_answers(user_id,title_id,option_id)
+        VALUES (#{userId}, #{titleId}, #{optionId});
+    </insert>
+
+</mapper>

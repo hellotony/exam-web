@@ -1,0 +1,65 @@
+/*TNsearch �ؼ�ר��css�ļ�*/
+
+.searchDiv{
+        white-space: normal;
+        z-index: 100001; 
+        position: absolute;
+		top: 30px;
+        border: 1px solid #95CC4A;
+        outline: 0px none;
+        word-wrap: break-word;
+        width: 250px;
+        background-color: #ffffff;
+        display: none;
+        list-style: none outside none;
+        font-size: 12px;
+        color: #333333;
+        font-family: "Microsoft YaHei","Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        text-align: left;
+}
+.searchList{
+        -moz-column-count:1;
+        overflow-y: auto;
+        list-style: none outside none;
+        padding: 0 2px 2px;
+        margin: 1px 0;
+        font-size: 13px;
+}
+.searchRes {
+    padding: 5px;
+}
+.ellipsis {
+    float: right; 
+    font-size: 12px; 
+    max-width:100%;
+    color: #F89406
+}
+.selectedCSS {
+    background-color: rgb(51, 153, 255);
+    /* border-radius: 4px 4px 4px 4px; */
+    color: #FFFFFF;
+    /* padding: 5px */
+    text-align: left;
+}
+.unSelectedCSS {
+    background-color: #FFFFFF;
+    color: #212121;
+  /*   padding: 5px; */
+    border: none;
+    border-radius: 0px
+    text-align: left;
+}
+.searchDiv ul, li {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.searchDiv li {
+    line-height: 18px;
+	display: list-item;
+	cursor: pointer;
+	text-align: left;
+	
+}

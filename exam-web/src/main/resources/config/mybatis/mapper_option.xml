@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="exam.IOptionDao" >
+    <resultMap id="BaseResultMap" type="com.exam.vo.option.OptionVo" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="title_id" property="titleId" jdbcType="INTEGER" />
+        <result column="content" property="content" jdbcType="VARCHAR"/>
+        <result column="option_order" property="optionOrder" jdbcType="INTEGER" />
+        <result column="next_title_id" property="nextTitleId" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+      id, title_id, content, option_order, next_title_id
+    </sql>
+
+    <!-- 查询所有 -->
+    <select id="queryAll" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM exam_options
+        WHERE del_flag=0
+    </select>
+
+
+    <!-- 查询 -->
+    <select id="queryListById" resultMap="BaseResultMap" parameterType="String">
+        SELECT <include refid="Base_Column_List"/>
+        FROM exam_options
+        WHERE del_flag=0 and id in  (#{optionId});
+    </select>
+
+
+</mapper>

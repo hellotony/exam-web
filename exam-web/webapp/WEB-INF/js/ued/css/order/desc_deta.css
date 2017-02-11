@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/**
+历史订单 开始
+**/
+.desc_deta p.desc_td {
+	width:80px;
+}
+.desc_deta td {
+	height:30px;
+	line-height:20px;
+	padding-left:5px;
+	border-right:1px solid #f0f0f0;
+	border-bottom:1px solid #ddd;
+}
+.desc_deta td p{ float:left; width:auto;}
+.order_no{color:#003399; text-decoration:underline;}
+.desc_deta td p a {
+	color:#003399;
+	text-decoration:underline;
+	float:left;
+	padding:2px 0;
+	width:434px;
+}
+.desc_deta b.desc_b {
+	padding-bottom:5px;
+}
+.desc_deta_title{ float:left; width:100%; height:37px; line-height:37px;}
+.desc_deta_title strong{ float:left; line-height:37px; font-size:16px; padding-left:10px;}
+.desc_deta_title a.desc_deta_del{ background: url(../../images/date_del.jpg) no-repeat; width:30px; height:30px; margin-top:7px; padding:0; float:right;}
+/**
+历史订单 结束
+**/

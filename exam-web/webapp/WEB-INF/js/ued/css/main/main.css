@@ -1,0 +1,14 @@
+.alarmNormal{
+    width:229px;
+    height:35px;
+    float:left;
+    background: url("../../images/sys/alarmNormal.png");
+    margin-top: 2px;
+}
+.alarmAbnormal{
+    width:229px;
+    height:35px;
+    float:left;
+    background: url("../../images/sys/alarmAbnormal.gif");
+    margin-top: 2px;
+}

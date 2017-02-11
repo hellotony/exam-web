@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="exam.ITitleDao" >
+    <resultMap id="BaseResultMap" type="com.exam.vo.title.TitleVo" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="type" property="type" jdbcType="INTEGER" />
+        <result column="gender_type" property="genderType" jdbcType="INTEGER"/>
+        <result column="content" property="content" jdbcType="VARCHAR" />
+        <result column="next_title_id" property="nextTitleId" jdbcType="INTEGER"/>
+        <result column="no" property="no" jdbcType="INTEGER"/>
+        <result column="abstract_no" property="abstractNo" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+      id, type, gender_type, content, next_title_id, no, abstract_no
+    </sql>
+
+    <!-- 根据性别查询 -->
+    <select id="queryByGender" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM exam_title
+        WHERE (gender_type=#{gender} OR gender_type=0)
+        AND del_flag=0
+    </select>
+
+    <select id="queryById" resultMap="BaseResultMap" >
+        SELECT <include refid="Base_Column_List"/>
+        FROM exam_title
+        where abstract_no = #{userId} AND del_flag=0
+    </select>
+</mapper>

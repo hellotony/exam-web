@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+/* 	background:#f4f4f4; */
+	background-color: white;
+}
+body, a, div, p, span, strong, b, ul, li, h2, dt, dd {
+	margin:0;
+	padding:0;
+	font-family:'微软雅黑';
+	font-size:14px;
+	color:#333;
+}
+a, a.button:hover {
+	text-decoration:none;
+	cursor:pointer;
+}
+
+.signalBitText{
+	width: 25px;
+}
+
+/**消息框 公用部分 开始**/
+.mb_box { width: 100%; height: 100%; z-index: 99999; position: fixed; opacity: 0.6; background-color: black; top: 0; left: 0; opacity: 0.6; }
+.mb_con { z-index: 999999; width: 400px; position: fixed; background-color: White; border-radius: 15px; overflow: hidden; border: 1px solid #25A6F1;box-shadow: 0 0 4px #93D7FF;}
+.mb_tit { display: block; font-size: 14px; color: #444; padding: 10px 15px;background-color: #DDD; border-radius: 15px 15px 0 0; border-bottom: 3px solid #009BFE; font-weight: bold;}
+.mb_msg{ padding: 20px; line-height: 20px; border-bottom: 1px dashed #DDD; font-size: 13px; text-align: center;}
+.mb_ico{ display: block; position: absolute; right: 10px; top: 9px;border: 1px solid Gray; width: 18px; height: 18px; text-align: center;line-height: 16px; cursor: pointer; border-radius: 12px; font-family: 微软雅黑;}
+.mb_btnbox{ margin: 15px 0 10px 0; text-align: center; }
+.mb_btn_ok, .mb_btn_no{ width: 85px; height: 30px; line-height: 30px; color: white; border: none; margin: auto; cursor: pointer; display: inline-block;border-radius: 4px; }
+.mb_btn_ok{ background-color: #168bbb; }
+.mb_btn_ok:hover { background-color: rgb(94, 163, 192); }
+.mb_btn_no{ background-color: gray; margin-left: 20px; }
+.mb_btn_no:hover { background-color: #aaaaaa; }
+/**消息框 公用部分  结束**/
+
+/*加载缓冲动画*/
+.loading-mask{
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.loading-wrapper{
+	height: 151px;
+	width: 390px;
+	background-color: #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -75px;
+}
+.loading-close-btn{
+	position: absolute;
+	background-color: #FFFCFC;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	color: #ccc;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	line-height: 17px;
+	top: -10px;
+	right: -10px;
+}
+.loading-close-btn:hover{
+	background: #f00;
+	color: #fff;
+}
+.loading-content{
+
+	height: 100%;
+	width: 100%;
+	background-color: #9bc9de;
+}
+.loading-animate-wrapper{
+	padding-top: 45px;
+	background-color: #fff;
+	height: 110px;
+}
+.loading-animate-inner{
+	height: 65px;
+}
+
+.loading-animate-text{
+	padding-top: 12px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.loader{
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	text-align: center;
+}
+
+@-webkit-keyframes loading-2{
+	0%{
+		-webkit-transform: scaleY(1);
+		transform: scaleY(1);
+	}
+	50%{
+		-webkit-transform: scaleY(0.4);
+		transform: scaleY(0.4);
+	}
+	100%{
+		-webkit-transform: scaleY(1);
+		transform: scaleY(1);
+	}
+}
+@-moz-keyframes loading-2{
+	0%{
+		-moz-transform: scaleY(1);
+		transform: scaleY(1);
+	}
+	50%{
+		-moz-transform: scaleY(0.4);
+		transform: scaleY(1);
+	}
+	100%{
+		-moz-transform: scaleY(1);
+		transform: scaleY(1);
+	}
+}
+
+.loading-2 {
+	display: inline-block;
+}
+.loading-2 i{
+	display: inline-block;
+	width: 5px;
+	height: 40px;
+	/* border-radius: 2px; */
+	margin:0 5px;
+	background-color: #333;
+}
+.loading-2 i:nth-child(1){
+	-webkit-animation:loading-2 1s ease-in 0.1s infinite;
+	-moz-animation:loading-2 1s ease-in 0.1s infinite;
+	animation:loading-2 1s ease-in 0.1s infinite;
+}
+.loading-2 i:nth-child(2){
+	-webkit-animation:loading-2 1s ease-in 0.2s infinite;
+	-moz-animation:loading-2 1s ease-in 0.2s infinite;
+	animation:loading-2 1s ease-in 0.2s infinite;
+}
+.loading-2 i:nth-child(3){
+	-webkit-animation:loading-2 1s ease-in 0.3s infinite;
+	-moz-animation:loading-2 1s ease-in 0.3s infinite;
+	animation:loading-2 1s ease-in 0.3s infinite;
+}
+.loading-2 i:nth-child(4){
+	-webkit-animation:loading-2 1s ease-in 0.4s infinite;
+	-moz-animation:loading-2 1s ease-in 0.4s infinite;
+	animation:loading-2 1s ease-in 0.4s infinite;
+}
+.loading-2 i:nth-child(5){
+	-webkit-animation:loading-2 1s ease-in 0.5s infinite;
+	-moz-animation:loading-2 1s ease-in 0.5s infinite;
+	animation:loading-2 1s ease-in 0.5s infinite;
+}

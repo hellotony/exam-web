@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+
+.insurance-module{
+	
+}
+
+/**公用模块  订单列表里面客服专员 **/
+ ul.tags {
+	padding:0;
+	border: 1px solid #ccc;
+	margin-left:83px;
+ 	margin-top: -28px; 
+	list-style: none;
+	width: 120px;
+	position: absolute;
+	z-index: 8;
+	min-height: 25px;
+	right:48px;
+} 
+
+ul.tags>li{ 
+	float:left; 
+	padding:0 4px; 
+	line-height:18px; 
+	margin:2px; 
+	background:#f6f6f6; 
+	border: 1px solid #ccc;
+	height: 20px;
+}
+ul.tags li dd{ 
+	float:left;
+	display:block;
+	font-size:12px;
+	padding-top: 2px;
+    padding-left: 0px;
+}
+ul.tags>li a{ 
+ 	background:url(../../images/del.jpg) no-repeat; 
+	width:10px; 	
+	padding:0; 
+	height:10px; 
+	float:left; 
+	display:block; 
+	margin:6px 0 0 5px;
+}
+
+.insurance-module p {
+	float:left;
+	text-align:right;
+	width:100px;
+	margin-right:5px;
+	padding-bottom:15px;
+	background:#f5f5f5;
+}
+.insurance-module p.to_travel{ width:130px;}
+
+.insurance-module .toggle-btn{
+	color: #008000;	
+    width: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    background-color: #fff;
+}
+.insurance-module a{
+	cursor: pointer;
+}
+.insurance-module .searchList{
+	list-style: none;
+	padding: 0;
+	
+}
+.insurance-module .searchList>li{
+	text-align: center; 
+	text-align: center;
+	text-align: left;
+	padding-left: 10px; 
+	cursor: pointer;
+}
+ ul.tags input{
+	width: 80px;
+	height: 20px;
+	margin-top: 2px;
+	border: 0px;
+} 
+ ul.tags input:focus{
+ 	border:1px solid #eee;
+ }
+  
+.insurance-module select[name="kefu"] {
+	float:left;
+}
+  
+/**公用模块结束  **/
+
+.insurance_title span span {
+float: left;
+display: block;
+padding: 0 15px;
+height: 20px;
+line-height: 20px;
+margin-top: 0px;
+margin-bottom:5px;
+font-size: 14px;
+}
+
+.showtext {
+ 	padding-right: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    word-break: normal;
+}
+
+
+ul.tags.tags-01 {
+    border: 1px solid #989898;
+    margin: 0;
+    padding: 0;
+    position: static;
+    width: 100%;
+}
+
+ul.tags.tags-clear-style{
+	position: static;
+	margin-top: 0;
+	margin: 0 auto;
+	min-width: 95px;
+	
+}
+
+
+ul.tags.tags-01> li {
+    float: left;
+    padding: 0 4px;
+    line-height: 18px;
+    margin: 2px;
+    background: #f6f6f6;
+    border: 1px solid #ccc;
+}
+ul.tags > li > dd{
+	 float: left;
+	 padding-left: 0;
+}
+ul.tags.tags-01> input{
+	width: 100%;
+}
+ul.tags.tags-01> input:focus{
+	border: 1px solid #d2d2d2;
+}
+
+input.error_input {
+    border: 1px solid #ff0000;
+    outline: 0;
+}
